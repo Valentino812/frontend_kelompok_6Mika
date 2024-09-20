@@ -4,12 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuShoes | Shoe Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <!-- Icon for title bar -->
     <link rel="icon" href=
-        "/assets/icon.png"
+        "/assets/brand-logo.png"
     type="image/png" />
 </head>
 <body>
-    
+    <!-- Navigation Bar Start-->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href ="">
+                <img src ="assets/brand-logo.png" id="navbar-logo">    
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <ul>
+                <li>
+                    <a href="/Products/index.html"><h3>Products</h3></a>
+                </li>
+                <li>
+                    <a href=""><h3>Male</h3></a>
+                </li>
+                <li>
+                    <a href=""><h3>Female</h3></a>
+                </li>
+                <li>
+                    <a href="/Contact/index.html"><h3>Contact</h3></a>
+                </li>
+            </ul>
+        </div>        
+        <div class="icons">
+            <!-- Search -->
+            <a href="" > 
+                <div class="icon-container">
+                    <img class="icon" src="assets/search.png">    
+                </div>
+            </a>
+            <!-- Account -->
+            <a href=""> 
+                <div class="icon-container">
+                    <img class="icon" src="assets/account.png">   
+                </div>
+            </a>
+            <!-- Cart -->
+            <a href=""> 
+                <div class="icon-container">
+                    <img class="icon" src="assets/cart.png">   
+                </div>
+            </a>
+        </div>
+    </nav>
+    </nav>
+    <!-- Navigation Bar End -->
+
+    <!-- Hero Start -->
+    <div class="hero">
+        <div class="carousel-hero">
+            <img src="assets/img1hero.JPG" alt="Image 1">
+            <img src="assets/img2hero.jpg" alt="Image 2">
+            <img src="assets/img3hero.jpg" alt="Image 3">
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+    <!-- Hero End -->
+
 </body>
 </html>
