@@ -136,5 +136,85 @@ html, body {
 }
 /* Hero End */
   
+/* History Start */
+.history {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 8px;
+    padding-bottom: 30px;
+}
+
+.history h2 {
+    font-size: 26px;
+    color: #393343;
+    font-weight:600;
+    text-align: center;
+}
+
+.history h3 {
+    color: #393343;
+    font-weight:500;
+    text-align: center;
+}
+/* History End */
+
+/* Interesting Points Start */
+.ip {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEFFFF;
+}
+
+.row-ip {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-ip {
+    width: 50vw;
+    transition: filter 0.3s ease-in-out; 
+}
+
+.img-ip-container {
+    position: relative;
+}
+
+.img-ip-container:hover .img-ip {
+    filter: brightness(0.7);
+}
+
+.img-ip-container:hover #img-ip-spesific {
+    filter: brightness(0.9);
+}
+
+.img-ip-text {
+    position: absolute; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FEFFFF;
+    top: 50%; 
+    left: 50%; 
+    right: 50%;
+}
+
+.img-ip-text h3{
+    font-size: 34px;
+}
+
+.img-ip-text a{
+    font-size: 18px;
+}
+
+#spesific-img-text {
+    color: #393343;
+}
+/* Interesting Points End */
+
+/* Products Start */
+
+/* Products End */
+
+
 
 
