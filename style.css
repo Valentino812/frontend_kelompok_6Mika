@@ -171,59 +171,6 @@ html, body {
 }
 /* Shoemaking End */
 
-/* Interesting Points Start */
-.ip {
-    display: flex;
-    flex-direction: column;
-    background-color: #EEEEEE;
-}
-
-.row-ip {
-    display: flex;
-    flex-direction: row;
-}
-
-.img-ip {
-    width: 50vw;
-    transition: filter 0.3s ease-in-out; 
-}
-
-.img-ip-container {
-    position: relative;
-}
-
-.img-ip-container:hover .img-ip {
-    filter: brightness(0.7);
-}
-
-.img-ip-container:hover #img-ip-spesific {
-    filter: brightness(0.9);
-}
-
-.img-ip-text {
-    position: absolute; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #FEFFFF;
-    top: 50%; 
-    left: 50%; 
-    right: 50%;
-}
-
-.img-ip-text h3{
-    font-size: 34px;
-}
-
-.img-ip-text a{
-    font-size: 18px;
-}
-
-#spesific-img-text {
-    color: #393343;
-}
-/* Interesting Points End */
-
 /* Products Start */
 .products {
     padding-left: 100px;
@@ -300,8 +247,104 @@ html, body {
     color:#F3B552;
 }
 
+
+/* Carousel Produk (masih belom jalan) */
+
+.products-carousel {
+    padding-top:50px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.products-carousel-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    gap: 6px;
+    justify-content: left;
+}
+
+.products-carousel-button {
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:4px;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.multi-carousel {
+    display: flex;
+    gap: 10px; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-img {
+    flex: 0 0 calc(25% - 10px); 
+    box-sizing: border-box;
+}
+
+.product-img img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Ensures 1x1 aspect ratio */
+    object-fit: cover;
+    display: block;
+}
 /* Products End */
 
+/* Interesting Points Start */
+.ip {
+    display: flex;
+    flex-direction: column;
+    background-color: #EEEEEE;
+}
 
+.row-ip {
+    display: flex;
+    flex-direction: row;
+}
 
+.img-ip {
+    width: 50vw;
+    transition: filter 0.3s ease-in-out; 
+}
+
+.img-ip-container {
+    position: relative;
+}
+
+.img-ip-container:hover .img-ip {
+    filter: brightness(0.7);
+}
+
+.img-ip-container:hover #img-ip-spesific {
+    filter: brightness(0.9);
+}
+
+.img-ip-text {
+    position: absolute; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FEFFFF;
+    top: 50%; 
+    left: 50%; 
+    right: 50%;
+}
+
+.img-ip-text h3{
+    font-size: 34px;
+}
+
+.img-ip-text a{
+    font-size: 18px;
+}
+
+#spesific-img-text {
+    color: #393343;
+}
+/* Interesting Points End */
 
