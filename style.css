@@ -47,7 +47,7 @@ html, body {
 
 .navbar-menu li h3 {
     font-size: 22px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease;
     color:#393343;
     font-weight:500;
     text-decoration: none; 
@@ -91,6 +91,7 @@ html, body {
     width: 100%;
     margin: auto;
     overflow: hidden;
+    background-color: #EEEEEE;
   }
   
 .carousel-hero {
@@ -142,6 +143,7 @@ html, body {
     padding-right: 90px;
     padding-top: 8px;
     padding-bottom: 30px;
+    background-color: #EEEEEE;
 }
 
 .history h2 {
@@ -158,11 +160,22 @@ html, body {
 }
 /* History End */
 
+/* Shoemaking Start */
+.shoemaking {
+    display: flex;
+    flex-direction: row;
+}
+
+.shoemaking-img {
+    width: 50vw;
+}
+/* Shoemaking End */
+
 /* Interesting Points Start */
 .ip {
     display: flex;
     flex-direction: column;
-    background-color: #FEFFFF;
+    background-color: #EEEEEE;
 }
 
 .row-ip {
@@ -212,6 +225,80 @@ html, body {
 /* Interesting Points End */
 
 /* Products Start */
+.products {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #FEFFFF;
+}
+
+.latest-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+}
+
+.latest-product-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.latest-product-title::before, .latest-product-title::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e0e0e0; 
+    margin: 0 10px;
+}
+
+.latest-product-title span {
+    font-weight: bold;
+    font-size: 28px;
+    color: #333; 
+    text-transform: uppercase;
+    color: #393343;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.featured-img {
+    width: 400px;
+    height: 400px;
+    transition: filter 0.2s ease;
+}
+
+.featured-img:hover {
+    filter:brightness(0.8);
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.product a {
+    text-decoration: none; 
+}
+
+.product h4 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: #393343;
+    transition: color 0.3s ease;
+}
+
+.product h4:hover {
+    color:#F3B552;
+}
 
 /* Products End */
 
