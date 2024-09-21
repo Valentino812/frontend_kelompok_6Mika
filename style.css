@@ -348,3 +348,79 @@ html, body {
 }
 /* Interesting Points End */
 
+/* Footer Start */
+.footer {
+    background-color:  #17252A;
+    color: white; 
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left:  40px;
+    padding-right:  40px;
+    text-align: center; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.logo img {
+    width: 75px; 
+    height: 75px;
+}
+
+.social {
+    display: flex; 
+    flex-direction: row;
+    padding-right: 30px;
+    gap: 6px;
+}
+
+.social-icon-container {
+    background-color: #393343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon-container:hover {
+    background-color: #F3B552;
+}
+
+.social-icon img {
+    width: 28px;
+    height: 28px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:30px;
+    gap: 70px;
+}
+
+.footer-link {
+    color: #FEFFFF; 
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600; 
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color:#F3B552;
+}
+
+.copyright {
+    font-size: 17px;
+    margin-top: 60px; 
+    color: #666;
+}
+/* Footer End */
