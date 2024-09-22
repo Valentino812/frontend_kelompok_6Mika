@@ -240,15 +240,12 @@ html, body {
     font-weight: 500;
     text-align: center;
     color: #393343;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
 }
 
 .product h4:hover {
     color:#F3B552;
 }
-
-
-/* Carousel Produk (masih belom jalan) */
 
 .products-carousel {
     padding-top:50px;
@@ -262,7 +259,8 @@ html, body {
     flex-direction: row;
     align-items: right;
     gap: 6px;
-    justify-content: left;
+    padding-bottom: 25px;
+    justify-content: right;
 }
 
 .products-carousel-button {
@@ -289,9 +287,14 @@ html, body {
 
 .product-img img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Ensures 1x1 aspect ratio */
+    aspect-ratio: 1 / 1; 
     object-fit: cover;
     display: block;
+    transition: filter 0.3s ease;
+}
+
+.product-img:hover img {
+    filter: brightness(0.8);
 }
 /* Products End */
 
