@@ -4,8 +4,8 @@ html, body {
     height: 100%;
     width: 100vw;
     overflow-x: hidden;
-    background-color:#FEFFFF;
-    font-family: 'Times new roman', sans-serif;
+    background-color: #F0F0F0; /* Lighter background */
+    font-family: 'Times New Roman', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -15,9 +15,9 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #FEFFFF; 
-    padding: 10px 40px;
-    color:#393343;
+    background-color: #FFFFFF; /* Pure white background */
+    padding: 20px 40px; /* Increased padding for more space */
+    color: #333333; /* Darker text color */
     position: relative; 
 }
 
@@ -48,13 +48,13 @@ html, body {
 .navbar-menu li h3 {
     font-size: 22px;
     transition: color 0.3s ease, transform 0.3s ease;
-    color:#393343;
-    font-weight:500;
+    color: #393343;
+    font-weight: 500;
     text-decoration: none; 
 }
 
 .navbar li h3:hover {
-    color:#F3B552;
+    color: #FF9900; /* Brighter hover color */
 }
 
 .icons {
@@ -64,7 +64,7 @@ html, body {
 }
 
 .icon-container {
-    background-color: #FEFFFF; 
+    background-color: #FFFFFF; /* Pure white background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +76,7 @@ html, body {
 }
 
 .icon-container:hover {
-    background-color:  #F3B552;
+    background-color: #FF9900; /* Brighter hover color */
 }
 
 .icon {
@@ -84,3 +84,90 @@ html, body {
     height: 20px;
 }
 /* Navbar End */
+
+.modal {
+    background-color: #FFFFFF; /* Pure white background */
+    position: relative; 
+    width: 100%; 
+    height: auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 40px; 
+}
+
+.modal-content {
+    background-color: #FFFFFF; /* Pure white background */
+    padding: 20px;
+    border-radius: 0; 
+    width: 100%; 
+    max-width: 600px; 
+    margin: 20px auto; /* Added margin for spacing */
+    box-shadow: none; 
+    position: relative;
+}
+
+
+.close-button {
+    display: none;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333333; /* Darker text color */
+}
+
+p {
+    color: #555555; /* Slightly darker text color */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-top: 10px; /* Added margin for spacing between form groups */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: none; /* Prevent resizing */
+}
+
+button {
+    background-color: #FF9900; /* Brighter button color */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px; 
+}
+
+button:hover {
+    background-color: #CC7A00; 
+}
+
+.form-group-inline {
+    display: flex;
+    gap: 15px; /
+}
+
+.form-group-inline .form-group {
+    flex: 1;
+}
