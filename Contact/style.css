@@ -63,6 +63,10 @@ a
     gap: 12px;
 }
 
+.mobile-icons {
+    display: none; /* Hiding mobile icons */
+}
+
 .icon-container {
     background-color: #FFFFFF; /* Pure white background */
     display: flex;
@@ -190,6 +194,7 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+    /* Navbar Start */
     .navbar {
         flex-direction: column; 
         padding: 10px; 
@@ -199,6 +204,17 @@ button:hover {
     .navbar-logo {
         order: 1; 
         margin-bottom: 10px; 
+    }
+
+    .icons {
+        display: none; /* Hiding destkop icons */
+    }
+
+    .mobile-icons {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        padding: 10px 0;
     }
 
     .burger-menu {
@@ -236,18 +252,15 @@ button:hover {
         transition: background-color 0.3s ease; 
     }
 
-    .navbar-menu li a:hover {
-        background-color: #F0F0F0; 
-    }
-
     .navbar-menu.active {
         display: flex; 
-        max-height: 500px; 
+        max-height: 700px; 
     }
 
     .burger-menu {
         display: flex; 
     }
+    /* Navbar End */
 
     /* Contact Section Start */
     .modal {
