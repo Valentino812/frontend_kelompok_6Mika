@@ -47,7 +47,7 @@ html, body {
 
 .navbar-menu li h3 {
     font-size: 22px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease;
     color:#393343;
     font-weight:500;
     text-decoration: none; 
@@ -84,3 +84,346 @@ html, body {
     height: 20px;
 }
 /* Navbar End */
+
+/* Hero Start */
+.hero {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #EEEEEE;
+  }
+  
+.carousel-hero {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+  
+.carousel-hero img {
+    width: 100%;
+    height: 30%;
+    flex-shrink: 0;
+}
+  
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    border-radius:8px;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-out
+}
+
+/* Showing the next and previous button for corousel when hovering over hero */
+.hero:hover .prev{
+    opacity: 1;
+}
+
+.hero:hover .next {
+    opacity: 1;
+}
+  
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+/* Hero End */
+  
+/* History Start */
+.history {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 8px;
+    padding-bottom: 30px;
+    background-color: #EEEEEE;
+}
+
+.history h2 {
+    font-size: 26px;
+    color: #393343;
+    font-weight:600;
+    text-align: center;
+}
+
+.history h3 {
+    color: #393343;
+    font-weight:500;
+    text-align: center;
+}
+/* History End */
+
+/* Shoemaking Start */
+.shoemaking {
+    display: flex;
+    flex-direction: row;
+}
+
+.shoemaking-img {
+    width: 50vw;
+}
+/* Shoemaking End */
+
+/* Products Start */
+.products {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #FEFFFF;
+}
+
+.latest-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+}
+
+.latest-product-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.latest-product-title::before, .latest-product-title::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e0e0e0; 
+    margin: 0 10px;
+}
+
+.latest-product-title span {
+    font-weight: bold;
+    font-size: 28px;
+    color: #333; 
+    text-transform: uppercase;
+    color: #393343;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.featured-img {
+    width: 400px;
+    height: 400px;
+    transition: filter 0.2s ease;
+}
+
+.featured-img:hover {
+    filter:brightness(0.8);
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.product a {
+    text-decoration: none; 
+}
+
+.product h4 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: #393343;
+    transition: color 0.2s ease;
+}
+
+.product h4:hover {
+    color:#F3B552;
+}
+
+.products-carousel {
+    padding-top:50px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.products-carousel-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    gap: 6px;
+    padding-bottom: 25px;
+    justify-content: right;
+}
+
+.products-carousel-button {
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:4px;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.multi-carousel {
+    display: flex;
+    gap: 10px; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-img {
+    flex: 0 0 calc(25% - 10px); 
+    box-sizing: border-box;
+}
+
+.product-img img {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.product-img:hover img {
+    filter: brightness(0.8);
+}
+/* Products End */
+
+/* Interesting Points Start */
+.ip {
+    display: flex;
+    flex-direction: column;
+    background-color: #EEEEEE;
+}
+
+.row-ip {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-ip {
+    width: 50vw;
+    transition: filter 0.3s ease-in-out; 
+}
+
+.img-ip-container {
+    position: relative;
+}
+
+.img-ip-container:hover .img-ip {
+    filter: brightness(0.7);
+}
+
+.img-ip-container:hover #img-ip-spesific {
+    filter: brightness(0.9);
+}
+
+.img-ip-text {
+    position: absolute; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FEFFFF;
+    top: 50%; 
+    left: 50%; 
+    right: 50%;
+}
+
+.img-ip-text h3{
+    font-size: 34px;
+}
+
+.img-ip-text a{
+    font-size: 18px;
+}
+
+#spesific-img-text {
+    color: #393343;
+}
+/* Interesting Points End */
+
+/* Footer Start */
+.footer {
+    background-color:  #17252A;
+    color: white; 
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left:  40px;
+    padding-right:  40px;
+    text-align: center; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.logo img {
+    width: 75px; 
+    height: 75px;
+}
+
+.social {
+    display: flex; 
+    flex-direction: row;
+    padding-right: 30px;
+    gap: 6px;
+}
+
+.social-icon-container {
+    background-color: #393343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon-container:hover {
+    background-color: #F3B552;
+}
+
+.social-icon img {
+    width: 28px;
+    height: 28px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:30px;
+    gap: 70px;
+}
+
+.footer-link {
+    color: #FEFFFF; 
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600; 
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color:#F3B552;
+}
+
+.copyright {
+    font-size: 17px;
+    margin-top: 60px; 
+    color: #666;
+}
+/* Footer End */
