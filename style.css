@@ -427,3 +427,61 @@ html, body {
     color: #666;
 }
 /* Footer End */
+
+/* Adjustments For Smartphone */
+@media only screen and (max-width: 600px) {
+    /* History Start */
+    .history {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    /* History End */
+
+    /* Shoemaking Start */
+    .shoemaking {
+        flex-direction: column;
+    }
+
+    .shoemaking-img {
+        width: 100vw;
+    }
+    /* Shoemaking End */
+
+    /* Products start */
+    .products {
+        padding-left: 68px;
+        padding-right: 68px;
+    }
+
+    .products-container {
+        flex-direction: column;
+    }
+
+    .featured-img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .products-carousel-buttons {
+        display: none;
+    }
+
+    .product-img {
+        flex: 0 0 calc(100% - 10px); 
+    }
+    /* Products End */
+
+    .img-ip {
+        width: 100vw;
+    }
+
+    .row-ip {
+        flex-direction: column;
+    }
+}
+
+/* Adjustments For Tablet */
+@media only screen and (max-width: 992px) and (min-width: 600px)
+{
+
+}
