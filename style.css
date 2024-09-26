@@ -274,6 +274,11 @@ html, body {
     z-index: 1000;
 }
 
+/* Mobile only slider */
+.slider {
+    display: none;
+}
+
 .multi-carousel {
     display: flex;
     gap: 10px; 
@@ -466,11 +471,16 @@ html, body {
         display: none;
     }
 
+    .slider {
+        display: block;
+    }
+
     .product-img {
-        flex: 0 0 calc(100% - 10px); 
+        flex: 0 0 calc(100% - 10px);
     }
     /* Products End */
 
+    /* Interesting Points Start  */
     .img-ip {
         width: 100vw;
     }
@@ -478,10 +488,99 @@ html, body {
     .row-ip {
         flex-direction: column;
     }
+    /* Interesting Points End */
+
+    /* Footer Start */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social {
+        padding-right: 0px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    /* Footer End */
 }
 
 /* Adjustments For Tablet */
 @media only screen and (max-width: 992px) and (min-width: 600px)
 {
+   /* History Start */
+   .history {
+    padding-left: 40px;
+    padding-right: 40px;
+    }
+    /* History End */
 
+    /* Shoemaking Start */
+    .shoemaking {
+        flex-direction: column;
+    }
+
+    .shoemaking-img {
+        width: 100vw;
+    }
+    /* Shoemaking End */
+
+    /* Products start */
+    .products {
+        padding-left: 68px;
+        padding-right: 68px;
+    }
+
+    .products-container {
+        flex-direction: column;
+    }
+
+    .featured-img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .products-carousel-buttons {
+        display: none;
+    }
+
+    .slider {
+        display: block;
+    }
+
+    .product-img {
+        flex: 0 0 calc(50% - 10px);
+    }
+    /* Products End */
+
+    /* Interesting Points Start  */
+    .img-ip {
+        width: 100vw;
+    }
+
+    .row-ip {
+        flex-direction: column;
+    }
+    /* Interesting Points End */
+
+    /* Footer Start */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social {
+        padding-right: 0px;
+    }
+
+    .footer-menu {
+        gap: 50px;
+    }
+    /* Footer End */
 }
