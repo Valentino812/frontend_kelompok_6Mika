@@ -7,107 +7,163 @@
     <link rel="stylesheet" href="stylemale.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
+    <!-- Navigation Bar Start-->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href ="../index.html">
+                <img src ="../assets/brand-logo.png" id="navbar-logo">    
+            </a>
         </div>
-        <nav>
+        <div class="navbar-menu">
             <ul>
-                <li><a href="#">Stock Boots</a></li>
-                <li><a href="#">Made To Order</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Advice</a></li>
-                <li><a href="#">Journal</a></li>
-                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="../Products/index.html"><h3>Products</h3></a>
+                </li>
+                <li>
+                    <a href=""><h3>Male</h3></a>
+                </li>
+                <li>
+                    <a href=""><h3>Female</h3></a>
+                </li>
+                <li>
+                    <a href="../Contact/index.html"><h3>Contact</h3></a>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>        
+        <div class="icons">
+            <!-- Search -->
+            <a href="" > 
+                <div class="icon-container">
+                    <img class="icon" src="../assets/search.png">    
+                </div>
+            </a>
+            <!-- Account -->
+            <a href=""> 
+                <div class="icon-container">
+                    <img class="icon" src="../assets/account.png">   
+                </div>
+            </a>
+            <!-- Cart -->
+            <a href=""> 
+                <div class="icon-container">
+                    <img class="icon" src="../assets/cart.png">   
+                </div>
+            </a>
+        </div>
+    </nav>
+    <!-- Navigation Bar End -->
 
-    <section class="hero">
-        <img src="hero-image.jpg" alt="Boots">
+    <!-- Hero Start -->
+    <div class="hero">
+        <div class="carousel-hero">
+            <img src="../assets/hero-image1.jpg" alt="Boots">
+            <img src="../assets/hero-image2.jpg" alt="Boots">
+            <img src="../assets/hero-image3.jpg" alt="Boots">
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
         <div class="hero-text">
             <h1>READY TO WEAR</h1>
             <p>Our seasonal prêt-à-porter creation, from the start to the latest available collection in stock. We introduced our newest articles, materials and details through these collections.</p>
         </div>
-    </section>
+    </div>
+    <!-- Hero End -->
 
     <section class="products">
         <div class="product">
-            <img src="product1.jpg" alt="Product 1">
-            <h2>Legatant Old - Cloe Horserump Overdyed Dark Brown</h2>
-            <p>Rp 5.600.000,00 IDR</p>
+            <div class="product-image">
+                <img src="../assets/product1.webp" alt="Product 1" class="main-image">
+                <img src="../assets/product1-hover.webp" alt="Product 1 Hover" class="hover-image">
+            </div>
+            <h2>Bedrock</h2>
+            <p>Rp 5.000.000,00 IDR</p>
         </div>
         <div class="product">
             <img src="product2.jpg" alt="Product 2">
-            <h2>Cordmaster - Domestic Black Tea Core</h2>
-            <p>Rp 4.400.000,00 IDR</p>
+            <h2>Boondockers</h2>
+            <p>Rp 5.400.000,00 IDR</p>
         </div>
         <div class="product">
             <img src="product3.jpg" alt="Product 3">
-            <h2>Valiant New 2-Tone Horsebutt</h2>
-            <p>Rp 6.300.000,00 IDR</p>
+            <h2>Cordmaster</h2>
+            <p>Rp 5.400.000,00 IDR</p>
         </div>
         <div class="product">
             <img src="product4.jpg" alt="Product 4">
-            <h2>The Boondockers Cloe Nuda - Naturale</h2>
-            <p>Rp 4.800.000,00 IDR</p>
+            <h2>Cordmaster Shoe</h2>
+            <p>Rp 4.900.000,00 IDR</p>
         </div>
         <div class="product">
             <img src="product5.jpg" alt="Product 5">
-            <h2>Trailmaster Low "Tough Trails Tough Boots" - Cobalt Blue</h2>
-            <p>Rp 3.850.000,00 IDR</p>
+            <h2>Cordmaster Shorty</h2>
+            <p>Rp 5.200.000,00 IDR</p>
         </div>
         <div class="product">
             <img src="product6.jpg" alt="Product 6">
-            <h2>Trailmaster Low "Tough Trails Tough Boots" - Black</h2>
-            <p>Rp 3.850.000,00 IDR</p>
+            <h2>Legacy X</h2>
+            <p>Rp 5.400.000,00 IDR</p>
         </div>
         <div class="product">
             <img src="product7.jpg" alt="Product 7">
-            <h2>Trailmaster Low "Tough Trails Tough Boots" - Natural</h2>
-            <p>Rp 3.850.000,00 IDR</p>
+            <h2>Legatant</h2>
+            <p>Rp 5.400.000,00 IDR</p>
         </div>
         <div class="product">
             <img src="product8.jpg" alt="Product 8">
-            <h2>The Boondockers - Waxed Flesh</h2>
-            <p>Rp 5.800.000,00 IDR</p>
+            <h2>Liberty Boots</h2>
+            <p>Rp 5.400.000,00 IDR</p>
+        </div>
+        <div class="product">
+            <img src="product9.jpg" alt="Product 9">
+            <h2>Marine Dress Boots</h2>
+            <p>Rp 5.400.000,00 IDR</p>
+        </div>
+        <div class="product">
+            <img src="product10.jpg" alt="Product 10">
+            <h2>Norris</h2>
+            <p>Rp 5.000.000,00 IDR</p>
+        </div>
+        <div class="product">
+            <img src="product12.jpg" alt="Product 11">
+            <h2>Officer Shoes</h2>
+            <p>Rp 4.700.000,00 IDR</p>
+        </div>
+        <div class="product">
+            <img src="product13.jpg" alt="Product 12">
+            <h2>Regent Boots</h2>
+            <p>Rp 5.400.000,00 IDR</p>
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-                <h3>PRODUCTS</h3>
-                <ul>
-                    <li><a href="#">Ready To Wear</a></li>
-                    <li><a href="#">Made To Order</a></li>
-                    <li><a href="#">Factory Seconds & Samples</a></li>
-                    <li><a href="#">Ponten Prapande</a></li>
-                    <li><a href="#">Accessories</a></li>
-                </ul>
+            <div class="logo">
+                <img src="../assets/brand-logo.png"/>
             </div>
-            <div class="footer-section">
-                <h3>INFORMATION</h3>
-                <ul>
-                    <li><a href="#">Delivery & Return Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>SUPPORT</h3>
-                <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Advice</a></li>
-                    <li><a href="#">After Sales Services</a></li>
-                    <li><a href="#">Craftsmanship</a></li>
-                    <li><a href="#">Journal</a></li>
-                </ul>
+            <div class="social">
+                <div class="social-icon-container">
+                    <a href="" target="_blank" class="social-icon"><img src="../assets/instagram.png"/></a>    
+                </div>
+                <div class="social-icon-container">
+                    <a href="" target="_blank" class="social-icon"><img src="../assets/twitter.png"/></a>    
+                </div>
+                <div class="social-icon-container">
+                    <a href="" target="_blank" class="social-icon"><img src="../assets/whatsapp.png"/></a>    
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 SAGARA BOOTMAKER</p>
+
+        <div class="footer-menu">
+            <a href="" class="footer-link">Products</a>
+            <a href="" class="footer-link">Male</a>
+            <a href="" class="footer-link">Female</a>
+            <a href="" class="footer-link">Contact</a>
+        </div>
+
+        <div class="copyright">
+            Copyright &copy; 2024 SuShoes Co.
         </div>
     </footer>
+    <script src="scriptmale.js"></script>
 </body>
 </html>
