@@ -100,12 +100,12 @@ header nav ul li a {
 }
 
 .hero-text h1 {
-    font-size: 2.8em; /* Diubah dari 2.5em ke 2.8em */
+    font-size: 2.8em; 
     margin: 0;
 }
 
 .hero-text p {
-    font-size: 1.1em; /* Diubah dari 1em ke 1.1em */
+    font-size: 1.1em; 
 }
 
 .products {
@@ -121,7 +121,8 @@ header nav ul li a {
     flex: 1 1 calc(25% - 40px);
     box-sizing: border-box;
     text-align: center;
-    /* border: 1px solid #ddd; */ /* Diubah untuk menghilangkan garis */
+    border: 1px solid #ddd; 
+    border-radius: 15px; 
     padding: 20px;
     background-color: #fff;
 }
@@ -129,6 +130,7 @@ header nav ul li a {
 .product img {
     width: 100%;
     height: auto;
+    border-radius: 15px; 
 }
 
 .product h2 {
@@ -284,12 +286,13 @@ footer {
     width: 34px;
     height: 34px;
     border-radius: 50%; 
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 1s ease, transform 1s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .icon-container:hover {
     background-color:  #F3B552;
+    transform: scale(1.1);  
 }
 
 .icon {
@@ -305,8 +308,9 @@ footer {
 
 .product-image img {
     width: 100%;
-    height: auto;
+    height: auto; 
     transition: transform 0.5s ease, opacity 0.3s ease; 
+    border-radius: 15px; 
 }
 
 .hover-image {
@@ -314,15 +318,17 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%; 
     opacity: 0;
-    transition: opacity 0.3s ease; 
+    transition: opacity 0.3s ease, transform 0.5s ease; 
+    border-radius: 15px; 
 }
 
 .product-image:hover .main-image {
-    transform: scale(1.1); 
+    transform: scale(1.05); 
 }
 
 .product-image:hover .hover-image {
     opacity: 1; 
+    transform: scale(1.05); 
 }
