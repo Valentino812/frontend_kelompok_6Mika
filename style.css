@@ -476,7 +476,7 @@ html, body {
     }
 
     .product-img {
-        flex: 0 0 calc(100% - 10px);
+        flex: 0 0 calc(50% - 10px);
     }
     /* Products End */
 
@@ -558,13 +558,13 @@ html, body {
     /* Products End */
 
     /* Interesting Points Start  */
-    .img-ip {
+    /* .img-ip {
         width: 100vw;
     }
 
     .row-ip {
         flex-direction: column;
-    }
+    } */
     /* Interesting Points End */
 
     /* Footer Start */
