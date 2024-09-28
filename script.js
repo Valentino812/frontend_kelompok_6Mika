@@ -1,7 +1,16 @@
-// Making sure DOM (Document Object Model) is fully loaded before any manipulation/changes 
-document.addEventListener('DOMContentLoaded', () => {
+$(document).ready(function()  {
 
-    /* Hero Carousel Start */
+    // 1.Entrance Transition Start (using jQuery for simpler syntax)
+    // Trigger the active class to do the transition for fade-in
+    $('.fade-in').each(function(index) {
+        $(this).delay(150 * index).queue(function(next) { // 150ms delay between transitions of each element 
+            $(this).addClass('active');
+            next();
+        });
+    });
+    // 1.Entrance Transition End
+
+    // 2.Hero Carousel Start 
     let currentIndex = 0;
     let autoSlideHero;
 
@@ -49,10 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
         prevSlide();
         resetAutoSlide();  
     });
-    // Hero Carousel End
+    // 2.Hero Carousel End
 
 
-    // Product Carousel Start
+    // 3.Product Carousel Start
 
     let currentProductIndex = 0;
     const productCarousel = document.querySelector('.multi-carousel');
@@ -118,6 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
         carouselSlider.value = currentProductIndex; // Syncronizing the slider value with the carousel
     }
 
-    // Product Carousel End
+    // 3.Product Carousel End
 
 });
