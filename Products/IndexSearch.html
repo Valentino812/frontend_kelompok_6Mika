@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - SuShoes</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" d></script>
-    
+    <title>SuShoes | Shoe Store</title>
+    <link rel="stylesheet" href="StyleSearch.css">
+    <script src="ScriptSearch.js"></script>
     <!-- Icon for title bar -->
     <link rel="icon" href=
         "../assets/brand-logo.png"
@@ -16,14 +15,14 @@
     <!-- Navigation Bar Start-->
     <nav class="navbar">
         <div class="navbar-logo">
-            <a href ="../index.html">
+            <a href ="">
                 <img src ="../assets/brand-logo.png" id="navbar-logo">    
             </a>
         </div>
         <div class="navbar-menu">
             <ul>
                 <li>
-                    <a href="../Products/index.html"><h3>Products</h3></a>
+                    <a href="Products/index.html"><h3>Products</h3></a>
                 </li>
                 <li>
                     <a href=""><h3>Male</h3></a>
@@ -32,35 +31,22 @@
                     <a href=""><h3>Female</h3></a>
                 </li>
                 <li>
-                    <a href="../Contact/index.html"><h3>Contact</h3></a>
+                    <a href="Contact/index.html"><h3>Contact</h3></a>
                 </li>
             </ul>
-        </div>        
-        <div class="icons">
-            <!-- Search -->
-            <a href="indexsearch.html" > 
-                <div class="icon-container">
-                    <img class="icon" src="../assets/search.png">    
-                </div>
-            </a>
-            <!-- Account -->
-            <a href=""> 
-                <div class="icon-container">
-                    <img class="icon" src="../assets/account.png">   
-                </div>
-            </a>
-            <!-- Cart -->
-            <a href=""> 
-                <div class="icon-container">
-                    <img class="icon" src="../assets/cart.png">   
-                </div>
-            </a>
-        </div>
+        </div> 
     </nav>
-    </nav>
+</nav>
     <!-- Navigation Bar End -->
-   
-    <div class="products">
+
+    <!-- Search Start -->
+    <div class="search-bar">
+        <label for="searching">Search Products</label> 
+        <br><br>
+        <input type="search" id="search">
+    </div>
+
+    <div class="products"></div>
         <div class="latest-product">
             <div class="latest-product-title">
                 <span>New Products</span>    
@@ -93,6 +79,9 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Search End -->
     <!-- Footer Start -->
     <footer class="footer">
         <div class="footer-content">
@@ -114,7 +103,7 @@
 
         <div class="footer-menu">
             <a href="" class="footer-link">Products</a>
-            <a href="" class="footer-link">Male</a>
+            <a href="/Products/indexmale.html" class="footer-link">Male</a>
             <a href="" class="footer-link">Female</a>
             <a href="" class="footer-link">Contact</a>
         </div>
@@ -124,6 +113,5 @@
         </div>
     </footer>
     <!-- Footer End -->
-
 </body>
 </html>
