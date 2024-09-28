@@ -203,7 +203,10 @@ button:hover {
 
     .navbar-logo {
         order: 1; 
-        margin-bottom: 10px; 
+        padding-top: 30px;
+        padding-left: 30px;
+        margin-bottom: -40px; 
+        margin-top: 28px;
     }
 
     .icons {
@@ -219,7 +222,9 @@ button:hover {
 
     .burger-menu {
         order: 2; 
-        align-self: flex-end; 
+        align-self: flex-end;
+        padding-right: 35px; 
+        margin-bottom: 20px;
     }
 
     .navbar-menu {
