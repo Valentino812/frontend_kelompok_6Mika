@@ -9,6 +9,43 @@
     <link rel="icon" href="../assets/brand-logo.png" type="image/png" />
 </head>
 <body>
+   <!-- Navbar Sidebars Start -->
+   <div class="sidebar-cart" id="sidebar-cart">
+        <div class="sidebar-container">
+            <h2>Shopping Cart</h2>
+            <ul class="cart-items">
+                <!-- Will be filled using javascript -->
+            </ul>
+            <h3 class="cart-total"></h3> 
+            <!-- Will be set using javascript -->    
+        </div>
+
+    </div>
+
+    <div class="sidebar-account" id="sidebar-account">
+        <div class="sidebar-container">
+            <h2>Create Account</h2>
+            <ul>
+                <li>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </li>
+                <li>
+                    <label for="email-account">Email:</label>
+                    <input type="email-account" id="email-account" name="email-account" required>
+                </li>
+                <li>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </li>
+                <li>
+                    <button type="submit" form="account-form">Create Account</button>
+                </li>
+            </ul>    
+        </div>
+    </div>
+    <!-- Navbar Sidebars End -->
+
     <!-- Navigation Bar Start-->
     <nav class="navbar">
         <div class="navbar-logo">
@@ -33,17 +70,20 @@
         </div>        
         <!-- Destkop Icons -->
         <div class="icons">
-            <a href=""><div class="icon-container"><img class="icon" src="../assets/search.png"></div></a>
-            <a href=""><div class="icon-container"><img class="icon" src="../assets/account.png"></div></a>
-            <a href=""><div class="icon-container"><img class="icon" src="../assets/cart.png"></div></a>
+            <a href=""><div class="icon-container"><a href="../Products/IndexSearch.html"><img class="icon" src="../assets/search.png"></div></a></a>
+            <a href=""><div class="icon-container"><a id="account-button"><img class="icon" src="../assets/account.png"></div></a> </a>
+            <a href=""><div class="icon-container"><a id="cart-button"><img class="icon" src="../assets/cart.png"></div></a> </a>
         </div>
         <div class="burger-menu" id="burger-menu">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
+ 
     </nav>
     <!-- Navigation Bar End -->
+
+ 
 
     <!-- Contact Form Start -->
     <div class="modal">
