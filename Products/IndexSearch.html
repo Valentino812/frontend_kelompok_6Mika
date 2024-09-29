@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuShoes | Shoe Store</title>
     <link rel="stylesheet" href="StyleSearch.css">
-    <script src="ScriptSearch.js"></script>
+    <script src="ScriptSearch.js" defer></script>
     <!-- Icon for title bar -->
     <link rel="icon" href=
         "../assets/brand-logo.png"
@@ -40,48 +40,17 @@
     <!-- Navigation Bar End -->
 
     <!-- Search Start -->
-    <div class="search-bar">
-        <label for="searching">Search Products</label> 
-        <br><br>
-        <input type="search" id="search">
-    </div>
-
-    <div class="products"></div>
-        <div class="latest-product">
-            <div class="latest-product-title">
-                <span>New Products</span>    
-            </div>
-            <div class="products-container">
-                <div class="product">
-                    <a href="../Product/index.html" target="_blank">
-                        <img class="featured-img" src="../assets/s1.webp">    
-                    </a>
-                    <a href="../Product/index.html" target="_blank">
-                        <h4>Cordmaster Domestic Black Tea Core</h4>    
-                    </a>
-                </div>
-                <div class="product">
-                    <a href="../Product/index.html" target="_blank">
-                        <img class="featured-img" src="../assets/s2.webp">    
-                    </a>
-                    <a href="../Product/index.html" target="_blank">
-                        <h4>Tough Trailmaster - WaxedThe Boondockers - Waxed Flesh</h4>    
-                    </a>
-                </div>
-                <div class="product">
-                    <a href="../Product/index.html" target="_blank">
-                        <img class="featured-img" src="../assets/s3.webp">    
-                    </a>
-                    <a href="../Product/index.html" target="_blank">
-                        <h4>The Boondockers Cloe Nuda - Naturale</h4>    
-                    </a>
-                </div>
-            </div>
+    <div class="sidebody" style="height: 69vh;">
+        <div class="searchBar">
+            <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+            <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
         </div>
     </div>
-
-
+    <div class="body">
+        <div id="root"></div>
+    </div>
     <!-- Search End -->
+
     <!-- Footer Start -->
     <footer class="footer">
         <div class="footer-content">
