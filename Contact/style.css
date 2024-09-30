@@ -20,7 +20,7 @@ html, body {
     color: #333333; /* Darker text color */
     position: relative; 
 }
-a
+
 #navbar-logo {
     width: 55px;
     height: 55px;
@@ -118,10 +118,47 @@ a
     z-index: 1000;
     transition: right 0.3s ease; 
     justify-content: right;
+    box-shadow: -2px 0 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
 .sidebar-cart.active {
     right: 0; 
+}
+
+.sidebar-container {
+    padding: 25px;
+}
+
+.close-sidebar {
+    padding-right: 200px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    align-items: left;
+    transition: color 0.3s ease;
+}
+
+.close-sidebar:hover {
+    color: #FF4500;
+    background:none;
+}
+
+.sidebar-container h3 {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: normal;
+    width: 100%;
+    line-height: 80px;
+    display: block;
+}
+
+.divider {
+    border: none; 
+    height: 1px; 
+    background-color: #333; 
+    margin: 20px 0; 
 }
 
 .sidebar-cart ul{
@@ -132,13 +169,6 @@ a
 .sidebar-cart ul li{
     padding-left: 25px;
     list-style: none;
-}
-
-.sidebar-cart ul li h3 {
-    text-decoration: none;
-    width: 100%;
-    line-height: 80px;
-    display: block;
 }
 
 .sidebar-account {
@@ -167,10 +197,56 @@ a
 .sidebar-account ul li{
     padding-left: 25px;
     list-style: none;
+    margin-bottom: 15px; 
 }
 
-.sidebar-container {
-    padding: 25px;
+.sidebar-account ul li input[type="email-account"],
+.sidebar-account ul li input[type="password"] {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+.sidebar-account ul li input[type="email-account"]:focus,
+.sidebar-account ul li input[type="password"]:focus {
+    border-color: grey; 
+    outline: none; 
+}
+
+#forgot-password, #create-account {
+    display: block;
+    color: #F0F0F0;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+}
+
+#forgot-password:hover, #create-account:hover {
+    text-decoration: underline;
+}
+
+.sidebar-account ul button  {
+    background-color: #FF9900;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px; 
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-account ul button:hover  {
+    background-color: #CC7A00; 
 }
 /* Sidebars End */
 
@@ -248,6 +324,7 @@ button {
     width: 100%;
     font-size: 16px;
     margin-top: 10px; 
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -256,7 +333,7 @@ button:hover {
 
 .form-group-inline {
     display: flex;
-    gap: 15px; /
+    gap: 15px; 
 }
 
 .form-group-inline .form-group {

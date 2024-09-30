@@ -9,43 +9,6 @@
     <link rel="icon" href="../assets/brand-logo.png" type="image/png" />
 </head>
 <body>
-   <!-- Navbar Sidebars Start -->
-   <div class="sidebar-cart" id="sidebar-cart">
-        <div class="sidebar-container">
-            <h2>Shopping Cart</h2>
-            <ul class="cart-items">
-                <!-- Will be filled using javascript -->
-            </ul>
-            <h3 class="cart-total"></h3> 
-            <!-- Will be set using javascript -->    
-        </div>
-
-    </div>
-
-    <div class="sidebar-account" id="sidebar-account">
-        <div class="sidebar-container">
-            <h2>Create Account</h2>
-            <ul>
-                <li>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-                </li>
-                <li>
-                    <label for="email-account">Email:</label>
-                    <input type="email-account" id="email-account" name="email-account" required>
-                </li>
-                <li>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                </li>
-                <li>
-                    <button type="submit" form="account-form">Create Account</button>
-                </li>
-            </ul>    
-        </div>
-    </div>
-    <!-- Navbar Sidebars End -->
-
     <!-- Navigation Bar Start-->
     <nav class="navbar">
         <div class="navbar-logo">
@@ -83,7 +46,45 @@
     </nav>
     <!-- Navigation Bar End -->
 
- 
+    <!-- Sidebars Start -->
+    <div class="sidebar-cart" id="sidebar-cart">
+        <div class="sidebar-container">
+            <button class="close-sidebar" id="close-cart">&times;</button> 
+            <h3>SHOPPING CART</h3>
+            <hr class="divider">
+            <ul class="cart-items">
+                <!-- Will be filled using javascript -->
+            </ul>
+            <h3 class="cart-total"></h3> 
+            <!-- Will be set using javascript -->    
+        </div>
+    </div>
+
+    <div class="sidebar-account" id="sidebar-account">
+        <div class="sidebar-container">
+            <button class="close-sidebar" id="close-account">&times;</button> 
+            <h3>LOGIN</h3>
+            <hr class="divider">
+            <ul>
+                <li>
+                    <input type="email-account" id="email-account" name="email-account" placeholder="Email" required>
+                </li>
+                <li>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </li>
+                <li>
+                    <a href="#" id="forgot-password">Forgot your password?</a>
+                </li>
+                <li>
+                    <button type="submit" form="account-form">Login</button>
+                </li>
+                <li>
+                    <a href="#" id="create-account">New customer? Create a new account</a>
+                </li>
+            </ul>    
+        </div>
+    </div>
+    <!-- Sidebars End -->
 
     <!-- Contact Form Start -->
     <div class="modal">
