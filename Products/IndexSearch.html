@@ -1,86 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuShoes | Shoe Store</title>
-    <link rel="stylesheet" href="StyleSearch.css">
+    <link rel="stylesheet" href="StyleSearch.css"></link>
     <script src="ScriptSearch.js" defer></script>
-    <!-- Icon for title bar -->
-    <link rel="icon" href=
-        "../assets/brand-logo.png"
-    type="image/png" />
 </head>
+
 <body>
     <!-- Navigation Bar Start-->
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <a href ="">
-                <img src ="../assets/brand-logo.png" id="navbar-logo">    
-            </a>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href ="../index.html">
+                    <img src ="../assets/brand-logo.png" id="navbar-logo">    
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <ul>
+                    <li>
+                        <a href="../Products/index.html"><h3>Products</h3></a>
+                    </li>
+                    <li>
+                        <a href="../Products/indexmale.html"><h3>Male</h3></a>
+                    </li>
+                    <li>
+                        <a href=""><h3>Female</h3></a>
+                    </li>
+                    <li>
+                        <a href="../Contact/index.html"><h3>Contact</h3></a>
+                    </li>
+                </ul>
+            </div>        
+        </nav>
+        </nav>
+        <!-- Navigation Bar End -->
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebody" style="height: 69vh;">
+                <div class="searchBar">
+                    <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+                    <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                </div>
+            </div>
         </div>
-        <div class="navbar-menu">
-            <ul>
-                <li>
-                    <a href="Products/index.html"><h3>Products</h3></a>
-                </li>
-                <li>
-                    <a href=""><h3>Male</h3></a>
-                </li>
-                <li>
-                    <a href=""><h3>Female</h3></a>
-                </li>
-                <li>
-                    <a href="Contact/index.html"><h3>Contact</h3></a>
-                </li>
-            </ul>
-        </div> 
-    </nav>
-</nav>
-    <!-- Navigation Bar End -->
-
-    <!-- Search Start -->
-    <div class="sidebody" style="height: 69vh;">
-        <div class="searchBar">
-            <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
-            <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+        <div class="data">
+            <div class="body">
+                <div id="root"></div>
+            </div>
         </div>
     </div>
-    <div class="body">
-        <div id="root"></div>
-    </div>
-    <!-- Search End -->
 
     <!-- Footer Start -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="logo">
-                <img src="../assets/brand-logo.png"/>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="../assets/brand-logo.png"/>
+                </div>
+                <div class="social">
+                    <div class="social-icon-container">
+                        <a href="" target="_blank" class="social-icon"><img src="../assets/instagram.png"/></a>    
+                    </div>
+                    <div class="social-icon-container">
+                        <a href="" target="_blank" class="social-icon"><img src="../assets/twitter.png"/></a>    
+                    </div>
+                    <div class="social-icon-container">
+                        <a href="" target="_blank" class="social-icon"><img src="../assets/whatsapp.png"/></a>    
+                    </div>
+                </div>
             </div>
-            <div class="social">
-                <div class="social-icon-container">
-                    <a href="" target="_blank" class="social-icon"><img src="../assets/instagram.png"/></a>    
-                </div>
-                <div class="social-icon-container">
-                    <a href="" target="_blank" class="social-icon"><img src="../assets/twitter.png"/></a>    
-                </div>
-                <div class="social-icon-container">
-                    <a href="" target="_blank" class="social-icon"><img src="../assets/whatsapp.png"/></a>    
-                </div>
+    
+            <div class="footer-menu">
+                <a href="" class="footer-link">Products</a>
+                <a href="" class="footer-link">Male</a>
+                <a href="" class="footer-link">Female</a>
+                <a href="" class="footer-link">Contact</a>
             </div>
-        </div>
-
-        <div class="footer-menu">
-            <a href="" class="footer-link">Products</a>
-            <a href="/Products/indexmale.html" class="footer-link">Male</a>
-            <a href="" class="footer-link">Female</a>
-            <a href="" class="footer-link">Contact</a>
-        </div>
-
-        <div class="copyright">
-            Copyright &copy; 2024 SuShoes Co.
-        </div>
+    
+            <div class="copyright">
+                Copyright &copy; 2024 SuShoes Co.
+            </div>
     </footer>
-    <!-- Footer End -->
+        <!-- Footer End -->
 </body>
 </html>

@@ -1,3 +1,11 @@
+/* 1.General Start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -8,8 +16,23 @@ html, body {
     font-family: 'Times new roman', sans-serif;
     scroll-behavior: smooth;
 }
+/* 1.General End */
 
-/* Navbar Start */
+/* 2.Entrance Animation Start */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Active state for fade-in after transition (used in the javascript) */
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0); 
+}
+/* 2.Entrance Animation End */
+
+/* 3.Navbar Start */
 .navbar {
     display: flex;
     flex-direction: row;
@@ -83,9 +106,9 @@ html, body {
     width: 20px;
     height: 20px;
 }
-/* Navbar End */
+/* 3.Navbar End */
 
-/* Hero Start */
+/* 4.Hero Start */
 .hero {
     position: relative;
     width: 100%;
@@ -135,9 +158,9 @@ html, body {
 .next {
     right: 20px;
 }
-/* Hero End */
+/* 4.Hero End */
   
-/* History Start */
+/* 5.History Start */
 .history {
     padding-left: 90px;
     padding-right: 90px;
@@ -158,9 +181,9 @@ html, body {
     font-weight:500;
     text-align: center;
 }
-/* History End */
+/* 5.History End */
 
-/* Shoemaking Start */
+/* 6.Shoemaking Start */
 .shoemaking {
     display: flex;
     flex-direction: row;
@@ -169,9 +192,9 @@ html, body {
 .shoemaking-img {
     width: 50vw;
 }
-/* Shoemaking End */
+/* 6.Shoemaking End */
 
-/* Products Start */
+/* 7.Products Start */
 .products {
     padding-left: 100px;
     padding-right: 100px;
@@ -254,6 +277,7 @@ html, body {
     margin: 0 auto;
 }
 
+/* Destkop only buttons */
 .products-carousel-buttons {
     display: flex;
     flex-direction: row;
@@ -301,9 +325,9 @@ html, body {
 .product-img:hover img {
     filter: brightness(0.8);
 }
-/* Products End */
+/* 7.Products End */
 
-/* Interesting Points Start */
+/* 8.Interesting Points Start */
 .ip {
     display: flex;
     flex-direction: column;
@@ -354,9 +378,9 @@ html, body {
 #spesific-img-text {
     color: #393343;
 }
-/* Interesting Points End */
+/* 8.Interesting Points End */
 
-/* Footer Start */
+/* 9.Footer Start */
 .footer {
     background-color:  #17252A;
     color: white; 
@@ -431,18 +455,18 @@ html, body {
     margin-top: 60px; 
     color: #666;
 }
-/* Footer End */
+/* 9.Footer End */
 
 /* Adjustments For Smartphone */
 @media only screen and (max-width: 600px) {
-    /* History Start */
+    /* 1.History Start */
     .history {
         padding-left: 40px;
         padding-right: 40px;
     }
-    /* History End */
+    /* 1.History End */
 
-    /* Shoemaking Start */
+    /* 2.Shoemaking Start */
     .shoemaking {
         flex-direction: column;
     }
@@ -450,9 +474,9 @@ html, body {
     .shoemaking-img {
         width: 100vw;
     }
-    /* Shoemaking End */
+    /* 2.Shoemaking End */
 
-    /* Products start */
+    /* 3.Products start */
     .products {
         padding-left: 68px;
         padding-right: 68px;
@@ -476,11 +500,11 @@ html, body {
     }
 
     .product-img {
-        flex: 0 0 calc(100% - 10px);
+        flex: 0 0 calc(50% - 10px);
     }
-    /* Products End */
+    /* 3.Products End */
 
-    /* Interesting Points Start  */
+    /* 4.Interesting Points Start  */
     .img-ip {
         width: 100vw;
     }
@@ -488,9 +512,9 @@ html, body {
     .row-ip {
         flex-direction: column;
     }
-    /* Interesting Points End */
+    /* 4.Interesting Points End */
 
-    /* Footer Start */
+    /* 5.Footer Start */
     .footer-content {
         flex-direction: column;
         gap: 30px;
@@ -506,20 +530,20 @@ html, body {
         flex-direction: column;
         gap: 10px;
     }
-    /* Footer End */
+    /* 5.Footer End */
 }
 
 /* Adjustments For Tablet */
 @media only screen and (max-width: 992px) and (min-width: 600px)
 {
-   /* History Start */
+   /* 1.History Start */
    .history {
     padding-left: 40px;
     padding-right: 40px;
     }
-    /* History End */
+    /* 1.History End */
 
-    /* Shoemaking Start */
+    /* 2.Shoemaking Start */
     .shoemaking {
         flex-direction: column;
     }
@@ -527,9 +551,9 @@ html, body {
     .shoemaking-img {
         width: 100vw;
     }
-    /* Shoemaking End */
+    /* 2.Shoemaking End */
 
-    /* Products start */
+    /* 3.Products start */
     .products {
         padding-left: 68px;
         padding-right: 68px;
@@ -555,19 +579,9 @@ html, body {
     .product-img {
         flex: 0 0 calc(50% - 10px);
     }
-    /* Products End */
+    /* 3.Products End */
 
-    /* Interesting Points Start  */
-    .img-ip {
-        width: 100vw;
-    }
-
-    .row-ip {
-        flex-direction: column;
-    }
-    /* Interesting Points End */
-
-    /* Footer Start */
+    /* 4.Footer Start */
     .footer-content {
         flex-direction: column;
         gap: 30px;
@@ -582,27 +596,21 @@ html, body {
     .footer-menu {
         gap: 50px;
     }
-    /* Footer End */
+    /* 4.Footer End */
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-    font-size: 18px;
-}
-body{
+/* Search Products Start */
+body {
     margin: 4vh;
 }
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.sidebar{
+.sidebar {
     width: 25%;
-    border: apx solid #eee;
+    border: 1px solid #eee;
     border-radius: 3px;
     padding: 15px;
     height: 92vh;
@@ -611,48 +619,48 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
-.data{
-    width: 73%;
-    border-radius: 3px;
-    height: 92vh;
-    overflow-y: auto;
-}
-.fa-circle{
+.fa-circle {
     color: orangered;
 }
-.searchbar{
+.searchBar {
     width: 100%;
     background-color: #eee;
     border-radius: 3px;
     padding: 9px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-input{
+input {
     border: none;
     outline: none;
     background: none;
 }
-.glass:hover{
+.glass:hover {
     color: orangered;
     cursor: pointer;
 }
-.social-icons{
+.social-icons {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.fa-brands{
+.fa-brands {
     font-size: 25px;
     margin: 0 10px;
     color: #333;
     cursor: pointer;
 }
-.fa-brands:hover{
+.fa-brands:hover {
     color: orangered;
 }
-.top{
+.data {
+    width: 73%;
+    border-radius: 3px;
+    height: 92vh;
+    overflow-y: auto;
+}
+.top {
     height: 60px;
     border-radius: 3px;
     background-color: #eee;
@@ -661,27 +669,28 @@ input{
     justify-content: space-between;
     padding: 15px;
 }
-.header{
+.header {
     height: 200px;
     border-radius: 3px;
     background-color: #333;
-    margin: 3vh 0;
+    margin: 3vh 0px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.header p{
+.header p {
     font-size: 40px;
     font-weight: bold;
     color: white;
 }
-#root{
+#root {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
-.box{
+.box {
     margin: 1px;
     display: flex;
     flex-direction: column;
@@ -691,20 +700,20 @@ input{
     border-radius: 5px;
     padding: 15px;
 }
-.img-box{
+.img-box {
     width: 100%;
     height: 176px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.images{
+.images {
     max-height: 90%;
     max-width: 90%;
     object-fit: cover;
     object-position: center;
 }
-.bottom{
+.bottom {
     margin-top: 20px;
     width: 100%;
     text-align: center;
@@ -714,11 +723,11 @@ input{
     justify-content: space-between;
     height: 110px;
 }
-h2{
+h2 {
     font-size: 20px;
-    color: orangered;
+    color: black;
 }
-button{
+button {
     width: 100%;
     position: relative;
     border: none;
@@ -728,9 +737,11 @@ button{
     cursor: pointer;
     color: white;
 }
-button:hover{
-    background-color: orangered;
+button:hover {
+    background-color: black;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
+
+/* Search Products End */
