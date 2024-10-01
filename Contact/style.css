@@ -19,6 +19,7 @@ html, body {
     padding: 20px 40px; /* Increased padding for more space */
     color: #333333; /* Darker text color */
     position: relative; 
+    z-index: 1100;
 }
 
 #navbar-logo {
@@ -115,7 +116,7 @@ html, body {
     justify-content: flex-end;
     right: -300px;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 1300;
     transition: right 0.3s ease; 
     justify-content: right;
     box-shadow: -2px 0 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
@@ -180,7 +181,6 @@ html, body {
     justify-content: flex-end;
     right: -300px;
     overflow: hidden;
-    z-index: 1000;
     transition: right 0.3s ease; 
     justify-content: right;
 }
@@ -274,7 +274,7 @@ html, body {
     position: relative;
 }
 
-/* For navbar and modal */
+/* Close button for navbar and modal */
 .close-button { 
     display: none;
 }
@@ -383,8 +383,6 @@ button:hover {
         width: 100%;
         background-color: #FFFFFF;
         position: absolute;
-        top: 70px;
-        left: 0;
         padding: 20px 0;
         order: 3; 
         z-index: 1100;
