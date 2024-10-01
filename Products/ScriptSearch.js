@@ -35,11 +35,19 @@ const displayItem = (items) => {
                 </div> 
                 <div class='bottom'>
                     <p>${title}</p>
-                    <h2>Rp${price}</h2>
-                <button>Add to cart</button>
+                    <h2>Rp${price}</h2> <br>
+                    <button onclick="change()" id="add">Add to cart</button>
+                    <button id="added" style="visibility:hidden">Added</button>
                 </div>
             </div>`
         )
     }).join('')
 };
+
+function change()
+{
+document.getElementById("add").style.visibility = 'hidden';
+document.getElementById("added").style.visibility = 'visible';
+}
+
 displayItem(categories);

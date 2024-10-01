@@ -619,9 +619,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-.fa-circle {
-    color: orangered;
-}
 .searchBar {
     width: 100%;
     background-color: #eee;
@@ -635,24 +632,6 @@ input {
     border: none;
     outline: none;
     background: none;
-}
-.glass:hover {
-    color: orangered;
-    cursor: pointer;
-}
-.social-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.fa-brands {
-    font-size: 25px;
-    margin: 0 10px;
-    color: #333;
-    cursor: pointer;
-}
-.fa-brands:hover {
-    color: orangered;
 }
 .data {
     width: 73%;
@@ -721,7 +700,7 @@ input {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 110px;
+    height: 130px;
 }
 h2 {
     font-size: 20px;
