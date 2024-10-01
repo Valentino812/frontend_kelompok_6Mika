@@ -10,6 +10,12 @@
     type="image/png" />
 </head>
 <body>
+    <!-- Search Popup -->
+    <div id="search-popup" class="search-popup" style="display:none;">
+        <span class="close-popup">&times;</span>
+        <input type="text" id="search-input" placeholder="Search products...">
+    </div>
+
     <!-- Navigation Bar Start-->
     <nav class="navbar">
         <div class="navbar-logo">
@@ -35,11 +41,7 @@
         </div>        
         <div class="icons">
             <!-- Search -->
-            <a href="" > 
-                <div class="icon-container">
-                    <img class="icon" src="../assets/search.png">    
-                </div>
-            </a>
+            <input type="text" id="navbar-search-input" placeholder="Search products..." class="search-field">
             <!-- Account -->
             <a href=""> 
                 <div class="icon-container">

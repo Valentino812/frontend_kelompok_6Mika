@@ -42,4 +42,19 @@ document.addEventListener('DOMContentLoaded', () => {
         prevSlide();
         resetAutoSlide();
     });
+
+    function searchProducts() {
+        const searchInput = document.querySelector('#navbar-search-input').value.toLowerCase();
+        const products = document.querySelectorAll('.product');
+
+        products.forEach(product => {
+            const productName = product.querySelector('h2').textContent.toLowerCase();
+            product.style.display = productName.includes(searchInput) ? 'block' : 'none'; // Change 'flex' to 'block'
+        });
+    }
+
+    // Add event listener for search
+    document.querySelector('#navbar-search-input').addEventListener('input', searchProducts);
+
+    // Remove search popup functionality
 });
