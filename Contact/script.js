@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbarMenu = document.querySelector('.navbar-menu');
     const closeButton = document.getElementById('close-button');
     const cartButton = document.getElementById('cart-button');
+    const cartButtonMobile = document.getElementById('cart-button-mobile');
     const accountButton = document.getElementById('account-button');
+    const accountButtonMobile = document.getElementById('account-button-mobile');
     const sidebarCart = document.querySelector('.sidebar-cart');
     const sidebarAccount = document.querySelector('.sidebar-account');
     const closeCartButton = document.getElementById('close-cart');
@@ -21,13 +23,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2.Account and cart sidebar:
 
-    // Button to open sidebar cart
+    // Button to open sidebar cart (Destkop)
     cartButton.addEventListener('click', () => {
         sidebarCart.classList.toggle('active');
     });
+
+    // Button to open sidebar cart (Mobile) 
+    cartButtonMobile.addEventListener('click', () => {
+        sidebarCart.classList.toggle('active');
+    });
     
-    // Button to open sidebar account
+    // Button to open sidebar account (Destkop)
     accountButton.addEventListener('click', () => {
+        sidebarAccount.classList.toggle('active');
+    });
+
+    // Button to open sidebar account (Mobile)
+    accountButtonMobile.addEventListener('click', () => {
         sidebarAccount.classList.toggle('active');
     });
 
