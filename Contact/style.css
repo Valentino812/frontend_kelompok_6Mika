@@ -377,7 +377,8 @@ button:hover {
     }
 
     .navbar-menu {
-        display: none; 
+        visibility: hidden;
+        opacity: 0;
         flex-direction: column;
         width: 100%;
         background-color: #FFFFFF;
@@ -386,10 +387,10 @@ button:hover {
         left: 0;
         padding: 20px 0;
         order: 3; 
-        z-index: 1000;
+        z-index: 1100;
         border-radius: 8px; 
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-        transition: max-height 0.3s ease-in-out; 
+        transition: all 0.3s ease-in-out; 
         max-height: 0; 
         overflow: hidden; 
     }
@@ -409,6 +410,8 @@ button:hover {
     .navbar-menu.active {
         display: flex; 
         max-height: 700px; 
+        visibility: visible;
+        opacity: 1;
     }
 
     .burger-menu {

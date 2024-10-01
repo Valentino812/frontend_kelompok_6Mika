@@ -10,7 +10,49 @@ $(document).ready(function()  {
     });
     // 1.Entrance Transition End
 
-    // 2.Hero Carousel Start 
+    // 2.Navbar and sidebar
+    const burgerMenu = document.getElementById('burger-menu');
+    const navbarMenu = document.querySelector('.navbar-menu');
+    const closeButton = document.getElementById('close-button');
+    const cartButton = document.getElementById('cart-button');
+    const accountButton = document.getElementById('account-button');
+    const sidebarCart = document.querySelector('.sidebar-cart');
+    const sidebarAccount = document.querySelector('.sidebar-account');
+    const closeCartButton = document.getElementById('close-cart');
+    const closeAccountButton = document.getElementById('close-account');
+
+    burgerMenu.addEventListener('click', () => {
+        navbarMenu.classList.toggle('active');
+        burgerMenu.classList.toggle('active');
+    });
+
+    closeButton.addEventListener('click', () => {
+        navbarMenu.classList.remove('active');
+        burgerMenu.classList.remove('active');
+    });
+
+    // Button to open sidebar cart
+    cartButton.addEventListener('click', () => {
+        sidebarCart.classList.toggle('active');
+    });
+    
+    // Button to open sidebar account
+    accountButton.addEventListener('click', () => {
+        sidebarAccount.classList.toggle('active');
+    });
+
+    // Cart sidebar close button
+    closeCartButton.addEventListener('click', () => {
+        sidebarCart.classList.remove('active');
+    });
+
+    // Account sidebar close button
+    closeAccountButton.addEventListener('click', () => {
+        sidebarAccount.classList.remove('active');
+    });
+    // 2.Navbar and sidebar
+
+    // 3.Hero Carousel Start 
     let currentIndex = 0;
     let autoSlideHero;
 
@@ -58,10 +100,10 @@ $(document).ready(function()  {
         prevSlide();
         resetAutoSlide();  
     });
-    // 2.Hero Carousel End
+    // 3.Hero Carousel End
 
 
-    // 3.Product Carousel Start
+    // 4.Product Carousel Start
 
     let currentProductIndex = 0;
     const productCarousel = document.querySelector('.multi-carousel');
@@ -126,7 +168,6 @@ $(document).ready(function()  {
         productCarousel.style.transform = `translateX(${offset}px)`;
         carouselSlider.value = currentProductIndex; // Syncronizing the slider value with the carousel
     }
-
-    // 3.Product Carousel End
+    // 4.Product Carousel End
 
 });
