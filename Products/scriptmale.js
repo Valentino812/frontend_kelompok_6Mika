@@ -48,8 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const products = document.querySelectorAll('.product');
 
         products.forEach(product => {
-            const productName = product.querySelector('h2').textContent.toLowerCase();
-            product.style.display = productName.includes(searchInput) ? 'block' : 'none'; // Change 'flex' to 'block'
+            product.style.display = 'block'; // Ensure all products are always displayed
         });
     }
 
@@ -57,4 +56,33 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#navbar-search-input').addEventListener('input', searchProducts);
 
     // Remove search popup functionality
+
+    // New event listener for search results
+    document.getElementById('navbar-search-input').addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        const products = document.querySelectorAll('.product');
+        const resultsList = document.getElementById('results-list');
+        const searchResults = document.getElementById('search-results');
+
+        resultsList.innerHTML = '';
+
+        if (query) {
+            products.forEach(product => {
+                const productName = product.querySelector('h2').textContent.toLowerCase();
+                if (productName.includes(query)) {
+                    const imgSrc = product.querySelector('.main-image').src;
+                    const productName = product.querySelector('h2').textContent;
+                    const productPrice = product.querySelector('p').textContent;
+
+                    const li = document.createElement('li');
+                    li.innerHTML = `<img src="${imgSrc}" alt="${productName}"><span>${productName} - ${productPrice}</span>`;
+                    resultsList.appendChild(li);
+                }
+            });
+
+            searchResults.style.display = 'block';
+        } else {
+            searchResults.style.display = 'none';
+        }
+    });
 });
