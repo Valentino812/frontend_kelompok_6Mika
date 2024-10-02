@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (query) {
             products.forEach(product => {
                 const productName = product.querySelector('h2').textContent.toLowerCase();
-                if (productName.includes(query)) {
+                if (productName.startsWith(query)) { 
                     const imgSrc = product.querySelector('.main-image').src;
                     const productName = product.querySelector('h2').textContent;
                     const productPrice = product.querySelector('p').textContent;
