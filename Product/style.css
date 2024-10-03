@@ -402,8 +402,7 @@ html, body {
 }
 
 .product-text {
-    text-align: right;
-    justify-content: center;
+    text-align: justify;
 }
 
 .featured-img {
