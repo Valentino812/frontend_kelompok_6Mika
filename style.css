@@ -596,7 +596,7 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top:30px;
+    padding-left: 130px;
     gap: 70px;
 }
 
@@ -785,6 +785,7 @@ html, body {
 
     .footer-menu {
         flex-direction: column;
+        padding-left: 0px;
         gap: 10px;
     }
     /* 6.Footer End */
@@ -854,6 +855,7 @@ html, body {
 
     .footer-menu {
         gap: 50px;
+        padding-left: 0px;
     }
     /* 4.Footer End */
 }

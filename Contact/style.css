@@ -455,7 +455,6 @@ button:hover {
 }
 
 
-
 .navbar-menu .close-button {
     display: none;
     font-size: 30px;
@@ -524,7 +523,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top:30px;
+    padding-left: 130px;
     gap: 70px;
 }
 
@@ -546,3 +545,47 @@ button:hover {
     color: #666;
 }
 /* Footer End */
+
+/* Adjustments For Smartphone */
+@media only screen and (max-width: 600px) {
+    /* Footer Start */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social {
+        padding-right: 0px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        padding-left: 0px;
+        gap: 10px;
+    }
+    /* Footer End */
+}
+
+/* Adjustments For Tablet */
+@media only screen and (max-width: 992px) and (min-width: 600px)
+{
+    /* Footer Start */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social {
+        padding-right: 0px;
+    }
+
+    .footer-menu {
+        gap: 50px;
+        padding-left: 0px;
+    }
+    /* Footer End */
+}
