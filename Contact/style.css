@@ -105,6 +105,18 @@ html, body {
 }
 /* Navbar End */
 
+/* Filter Start */
+.blur {
+    filter: none;
+    transition: filter 0.3s ease; 
+}
+
+.blur.activeblur {
+    filter: blur(1px);
+}
+/* Filter End */
+
+
 /* Sidebars Start */
 .sidebar-cart,
 .sidebar-account {

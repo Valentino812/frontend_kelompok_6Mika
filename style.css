@@ -11,7 +11,7 @@ html, body {
 }
 /* 1.General End */
 
-/* 2.Entrance Animation Start */
+/* 2.Entrance Animation and Filter Start */
 .fade-in {
     opacity: 0;
     transform: translateY(20px); 
@@ -23,7 +23,17 @@ html, body {
     opacity: 1;
     transform: translateY(0); 
 }
-/* 2.Entrance Animation End */
+
+.blur {
+    filter: none;
+    transition: filter 0.3s ease; 
+}
+
+.blur.activeblur {
+    filter: blur(1px);
+}
+
+/* 2.Entrance Animation and Filter End */
 
 /* 3.Navbar Start */
 .navbar {
