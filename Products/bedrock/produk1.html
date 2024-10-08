@@ -77,36 +77,59 @@
         <div class="config-title">Custom Configuration :</div>
         <div class="config-section">
           <label>SHOE LAST:</label>
-          <img
-            alt="Structured"
-            height="50"
-            src="https://storage.googleapis.com/a1aa/image/ALmvKpH4ZybgOdEAraEOt3Q9prn4W1vwvF5DSDS3RkRDGw4E.jpg"
-            width="50"
-          />
-          <img
-            alt="Unstructured"
-            class="selected"
-            height="50"
-            src="https://storage.googleapis.com/a1aa/image/1O8oiiKAkOKwB1WilzN3raeZpmF4NCW6DXeJiW4MpfYcwAGnA.jpg"
-            width="50"
-          />
+          <div class="shoe-last-options">
+            <div class="shoe-option">
+              <img
+                alt="Structured"
+                class="shoe-last-option"
+                height="50"
+                src="../../assets/morgan.webp"
+                width="50"
+                data-description="Morgan"
+              />
+              <div class="description">Morgan</div>
+            </div>
+            <div class="shoe-option">
+              <img
+                alt="Unstructured"
+                class="shoe-last-option selected"
+                height="50"
+                src="../../assets/mark.webp"
+                width="50"
+                data-description="Mark"
+              />
+              <div class="description">Mark</div>
+            </div>
+          </div>
+          <div id="shoe-last-preview" class="shoe-last-preview"></div> <!-- Tambahkan elemen ini -->
         </div>
         <div class="config-section">
           <label>TOE BOX:</label>
-          <img
-            alt="Structured"
-            height="50"
-            src="https://storage.googleapis.com/a1aa/image/NHlomf1eaKkNLEaezDKttfHnxMxlXRYFrRX8fIl8EtISADYcC.jpg"
-            width="50"
-          />
-          <img
-            alt="Unstructured"
-            class="selected"
-            height="50"
-            src="https://storage.googleapis.com/a1aa/image/ytn412ElIJJmA9aUyQONaUKSi5ndeeH3O92DS8z1TRrHYAjTA.jpg"
-            width="50"
-          />
+          <div class="toe-box-options">
+            <div class="toe-box-option">
+              <img
+                alt="Structured"
+                height="50"
+                src="../../assets/structure.webp"
+                width="50"
+                data-description="Structured"
+              />
+              <div class="description">Structured</div>
+            </div>
+            <div class="toe-box-option">
+              <img
+                alt="Unstructured"
+                class="selected"
+                height="50"
+                src="../../assets/unstructure.webp"
+                width="50"
+                data-description="Unstructured"
+              />
+              <div class="description">Unstructured</div>
+            </div>
+          </div>
         </div>
+        <div id="toe-box-preview" class="toe-box-preview"></div>
         <div class="config-section">
           <label>SIZE:</label>
           <select>
@@ -130,12 +153,14 @@
         </div>
         <div class="config-section">
           <label>UPPER:</label>
-          <select>
+          <select name="upper">
+            <option>Select an option</option>
             <option>Badalassi Nemesis</option>
-            <option>Badalassi Vachetta</option> <!-- Opsi baru -->
-            <option>Badalassi Suede</option>    <!-- Opsi baru -->
-            <option>Badalassi Nubuck</option>   <!-- Opsi baru -->
+            <option>Badalassi Vachetta</option>
+            <option>Badalassi Suede</option>
+            <option>Badalassi Nubuck</option>
           </select>
+          <div class="upper-options"></div> <!-- Container for dynamic options -->
         </div>
         <button id="add-to-cart-button" class="add-to-cart">Add to Cart</button>
       </div>

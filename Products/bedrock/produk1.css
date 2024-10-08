@@ -298,18 +298,18 @@ body {
 /* Add the following styles to align shoelast images side by side */
 .shoe-last-options {
     display: flex;
-    justify-content: space-between; 
-    align-items: center;           
+    justify-content: flex-start; 
     gap: 10px; 
-    max-width: 300px;               
-    margin: 0 auto;                
-    margin-bottom: 20px; 
+    align-items: flex-start; 
+    max-width: 300px;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .shoe-option {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
 }
 
 .shoe-last-option {
@@ -342,3 +342,63 @@ body {
 .add-to-cart:hover {
     background-color: #e68a00;
 }
+
+/* Add the following styles to align toe box images side by side */
+.toe-box-options {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 10px; /* Ubah dari 0 ke 10px untuk memberi jarak yang lebih baik */
+    align-items: flex-start; 
+    max-width: 300px; 
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.toe-box-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.toe-box-option img {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.toe-box-option img:hover {
+    transform: scale(1.1); 
+}
+
+/* Add this CSS for toe box preview */
+.toe-box-preview {
+    position: absolute;
+    display: none;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.toe-box-preview img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Add this CSS for shoe last preview */
+.shoe-last-preview {
+    position: absolute;
+    display: none;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.shoe-last-preview img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+
