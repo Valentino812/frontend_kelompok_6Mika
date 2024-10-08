@@ -57,10 +57,6 @@
         </div>
     </nav>
     <!-- Navigation Bar End -->
-    <!-- Search Results -->
-    <div id="search-results" class="search-results" style="display:none;">
-        <ul id="results-list"></ul>
-    </div>
     <!-- Hero Start -->
     <div class="hero">
         <div class="carousel-hero">
@@ -76,6 +72,15 @@
         </div>
     </div>
     <!-- Hero End -->
+
+    <!-- Sort Dropdown -->
+    <div class="sort-container">
+        <select id="sort-select">
+            <option value="">Sort By</option>
+            <option value="price">Price: High to Low</option>
+            <option value="alphabetical">Alphabetical Order</option>
+        </select>
+    </div>
 
     <section class="products">
         <div class="product">
@@ -176,10 +181,21 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <!-- Search Results -->
+    <div id="search-results" class="search-results" style="display:none;">
+        <ul id="results-list"></ul>
+    </div>
+
+    <footer class="footer fade-in blur">
         <div class="footer-content">
             <div class="logo">
                 <img src="../assets/brand-logo.png"/>
+            </div>
+            <div class="footer-menu">
+                <a href="" class="footer-link">Products</a>
+                <a href="/Products/indexmale.html" class="footer-link">Male</a>
+                <a href="" class="footer-link">Female</a>
+                <a href="" class="footer-link">Contact</a>
             </div>
             <div class="social">
                 <div class="social-icon-container">
@@ -193,14 +209,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="footer-menu">
-            <a href="" class="footer-link">Products</a>
-            <a href="" class="footer-link">Male</a>
-            <a href="" class="footer-link">Female</a>
-            <a href="" class="footer-link">Contact</a>
-        </div>
-
         <div class="copyright">
             Copyright &copy; 2024 SuShoes Co.
         </div>

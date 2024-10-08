@@ -1,7 +1,6 @@
 // JavaScript untuk interaksi jika diperlukan
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Menangani klik pada gambar dalam config-section
     const configSections = document.querySelectorAll('.config-section');
 
     configSections.forEach(section => {
@@ -9,9 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         images.forEach(image => {
             image.addEventListener('click', () => {
-                // Hapus kelas 'selected' dari semua gambar dalam section
                 images.forEach(img => img.classList.remove('selected'));
-                // Tambahkan kelas 'selected' pada gambar yang diklik
                 image.classList.add('selected');
             });
         });
@@ -22,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     selects.forEach(select => {
         select.addEventListener('change', (e) => {
-            // Anda dapat menambahkan logika tambahan di sini jika diperlukan
             console.log(`Pilihan diubah menjadi: ${e.target.value}`);
         });
     });
@@ -42,21 +38,25 @@ document.addEventListener('DOMContentLoaded', () => {
         closeButton.style.display = 'none';
     });
 
-    // Handler untuk SHOE LAST
+    // Handler for SHOE LAST
     const shoeLastImages = document.querySelectorAll('.shoe-last-option');
     const shoeLastDescription = document.getElementById('shoe-last-description');
 
     shoeLastImages.forEach(img => {
         img.addEventListener('click', () => {
-            // Hapus kelas 'selected' dari semua gambar
+
             shoeLastImages.forEach(image => image.classList.remove('selected'));
             
-            // Tambahkan kelas 'selected' pada gambar yang diklik
             img.classList.add('selected');
-            
-            // Perbarui deskripsi
-            const description = img.getAttribute('data-description');
+             const description = img.getAttribute('data-description');
             shoeLastDescription.textContent = description;
         });
+    });
+
+    // Handle "Add to Cart" button click
+    const addToCartButton = document.getElementById('add-to-cart-button');
+    addToCartButton.addEventListener('click', () => {
+        alert('Item added to cart!');
+        // You can add more logic here to actually add the item to a car
     });
 });
