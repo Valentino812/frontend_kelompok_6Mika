@@ -133,4 +133,18 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#sort-select').addEventListener('change', (event) => {
         sortProducts(event.target.value);
     });
+
+    const burger = document.querySelector('.burger');
+    const navbarMenu = document.querySelector('.navbar-menu');
+
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active'); // Toggle active class on burger
+        navbarMenu.classList.toggle('active'); // Toggle active class on menu
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!navbarMenu.contains(event.target) && !burger.contains(event.target)) {
+            navbarMenu.classList.remove('active');
+        }
+    });
 });
