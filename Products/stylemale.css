@@ -401,3 +401,13 @@ footer {
     border-radius: 5px;
 }
 
+/* Tambahkan ini ke file CSS Anda */
+.product-link {
+    text-decoration: none; /* Menghapus garis bawah */
+    color: inherit; /* Memastikan warna teks sesuai dengan elemen induknya */
+}
+
+.product-link:hover {
+    color: #F3B552; /* Warna saat hover, jika diinginkan */
+}
+
