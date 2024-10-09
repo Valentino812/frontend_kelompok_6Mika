@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Male - SuShoes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemale.css">
     <link rel="icon" href=
         "../assets/brand-logo.png"
     type="image/png" />
@@ -76,11 +76,21 @@
         </div>
     </div>
     <!-- Hero End -->
-
+    <div class="sort-container">
+        <select id="sort-select">
+            <option value="">Sort By</option>
+            <option value="price">Price: High to Low</option>
+            <option value="price-low-to-high">Price: Low to High</option>
+            <option value="alphabetical">Alphabetical Order</option>
+            <option value="reverse-alphabetical">Reverse Alphabetical Order</option>
+        </select>
+    </div>
+    <!-- Products Section -->
     <section class="products">
         <div class="product">
             <div class="product-image">
                 <img src="../assets/product1.webp" alt="Product 1" class="main-image">
+                
                 <img src="../assets/product1-hover.webp" alt="Product 1 Hover" class="hover-image">
             </div>
             <h2>Bedrock</h2>
@@ -203,6 +213,6 @@
             Copyright &copy; 2024 SuShoes Co.
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="scriptmale.js"></script>
 </body>
 </html>

@@ -116,9 +116,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const nameB = b.querySelector('h2').textContent.toLowerCase();
 
             if (criteria === 'price') {
-                return priceB - priceA; // Sort by price descending
+                return priceB - priceA; 
+            } else if (criteria === 'price-low-to-high') {
+                return priceA - priceB; 
             } else if (criteria === 'alphabetical') {
-                return nameA.localeCompare(nameB); // Sort alphabetically
+                return nameA.localeCompare(nameB); 
+            } else if (criteria === 'reverse-alphabetical') {
+                return nameB.localeCompare(nameA); 
             }
         });
 
