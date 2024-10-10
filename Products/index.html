@@ -17,7 +17,7 @@
     </div>
 
     <!-- Navigation Bar Start-->
-    <nav class="navbar">
+    <nav class="navbar blur">
         <div class="navbar-logo">
             <a href ="../index.html">
                 <img src ="../assets/brand-logo.png" id="navbar-logo">    
@@ -40,7 +40,7 @@
             </ul>
             <div class="mobile-icons">
                 <!-- Search -->
-                <!-- <input type="text" id="navbar-search-input" placeholder="Search products..." class="search-field"> -->
+                <input type="text" id="navbar-mobile-search-input" placeholder="Search products..." class="search-field">
                 <a href=""><div class="icon-container"><a id="account-button-mobile"><img class="icon" src="../assets/account.png"></div></a></a>
                 <a href=""><div class="icon-container"><a id="cart-button-mobile"><img class="icon" src="../assets/cart.png"></div></a></a>
             </div>
@@ -50,17 +50,9 @@
             <!-- Search -->
             <input type="text" id="navbar-search-input" placeholder="Search products..." class="search-field">
             <!-- Account -->
-            <a href=""> 
-                <div class="icon-container">
-                    <img class="icon" src="../assets/account.png">   
-                </div>
-            </a>
+            <a href=""><div class="icon-container"><a id="account-button"><img class="icon" src="../assets/account.png"></div></a> </a>
             <!-- Cart -->
-            <a href=""> 
-                <div class="icon-container">
-                    <img class="icon" src="../assets/cart.png">   
-                </div>
-            </a>
+            <a href=""><div class="icon-container"><a id="cart-button"><img class="icon" src="../assets/cart.png"></div></a> </a>
         </div>
         <div class="burger-menu burger" id="burger-menu">
             <div class="line"></div>
@@ -115,7 +107,7 @@
         <ul id="results-list"></ul>
     </div>
     <!-- Hero Start -->
-    <div class="hero">
+    <div class="hero blur">
         <div class="carousel-hero">
             <img src="../assets/hero-image1.jpg" alt="Boots">
             <img src="../assets/hero-image2.jpg" alt="Boots">
@@ -129,7 +121,7 @@
         </div>
     </div>
     <!-- Hero End -->
-    <div class="sort-container">
+    <div class="sort-container blur">
         <select id="sort-select">
             <option value="">Sort By</option>
             <option value="price">Price: High to Low</option>
@@ -139,7 +131,7 @@
         </select>
     </div>
 
-    <section class="products">
+    <section class="products blur">
         <div class="product">
             <div class="product-image">
                 <img src="../assets/product1.webp" alt="Product 1" class="main-image">

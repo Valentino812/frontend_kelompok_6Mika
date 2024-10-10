@@ -149,4 +149,66 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     // Navbar burger end
+
+    // Sidebars Start
+    const cartButton = document.getElementById('cart-button');
+    const cartButtonMobile = document.getElementById('cart-button-mobile');
+    const accountButton = document.getElementById('account-button');
+    const accountButtonMobile = document.getElementById('account-button-mobile');
+    const sidebarCart = document.querySelector('.sidebar-cart');
+    const sidebarAccount = document.querySelector('.sidebar-account');
+    const closeCartButton = document.getElementById('close-cart');
+    const closeAccountButton = document.getElementById('close-account');
+    const blurEffect = document.querySelectorAll('.blur');
+
+    // Function to give blur effect
+    function toggleBlur() {
+        blurEffect.forEach(element => {
+            element.classList.toggle('activeblur');
+        });
+    }
+
+    // Function to remove blur effect
+    function removeBlur() {
+        blurEffect.forEach(element => {
+            element.classList.remove('activeblur');
+        });
+    }
+
+    // Button to open sidebar cart (Destkop)
+    cartButton.addEventListener('click', () => {
+        sidebarCart.classList.toggle('active');
+        toggleBlur();
+    });
+
+    // Button to open sidebar cart (Mobile) 
+    cartButtonMobile.addEventListener('click', () => {
+        sidebarCart.classList.toggle('active');
+        toggleBlur();
+    });
+    
+    // Button to open sidebar account (Destkop)
+    accountButton.addEventListener('click', () => {
+        sidebarAccount.classList.toggle('active')
+        toggleBlur();
+    });
+
+    // Button to open sidebar account (Mobile)
+    accountButtonMobile.addEventListener('click', () => {
+        sidebarAccount.classList.toggle('active');
+        toggleBlur();
+    });
+
+    // Cart sidebar close button
+    closeCartButton.addEventListener('click', () => {
+        sidebarCart.classList.remove('active');
+        removeBlur();
+    });
+
+    // Account sidebar close button
+    closeAccountButton.addEventListener('click', () => {
+        sidebarAccount.classList.remove('active');
+        removeBlur();
+    });
+    // Sidebars End
 });

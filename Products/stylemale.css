@@ -9,6 +9,30 @@ html, body {
     scroll-behavior: smooth;
 }
 
+/* 2.Entrance Animation and Filter Start */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Active state for fade-in after transition (used in the javascript) */
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+.blur {
+    filter: none;
+    transition: filter 0.3s ease; 
+}
+
+.blur.activeblur {
+    filter: blur(1px);
+}
+
+/* 2.Entrance Animation and Filter End */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -760,20 +784,51 @@ footer {
     
 }
 
-/* Responsive Styles for Footer */
-@media (max-width: 576px) {
+/* Responsive Styles for Footer
+ /* Adjustments For Smartphone */
+@media only screen and (max-width: 600px) {
+
+    /* 6.Footer Start */
     .footer-content {
         flex-direction: column;
+        gap: 30px;
         align-items: center;
-        text-align: center;
+        justify-content: center;
+    }
+
+    .social {
+        padding-right: 0px;
     }
 
     .footer-menu {
         flex-direction: column;
-        gap: 20px;
+        padding-left: 0px;
+        gap: 10px;
+    }
+    /* 6.Footer End */
+}
+
+
+/* Adjustments For Tablet */
+@media only screen and (max-width: 992px) and (min-width: 600px)
+{
+    /* 4.Footer Start */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
     }
 
     .social {
-        justify-content: center;
+        padding-right: 0px;
     }
+
+    .footer-menu {
+        gap: 50px;
+        padding-left: 0px;
+    }
+    /* 4.Footer End */
 }
+
+
