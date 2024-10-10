@@ -38,6 +38,12 @@
                     <a href="../Contact/index.html"><h3>Contact</h3></a>
                 </li>
             </ul>
+            <div class="mobile-icons">
+                <!-- Search -->
+                <!-- <input type="text" id="navbar-search-input" placeholder="Search products..." class="search-field"> -->
+                <a href=""><div class="icon-container"><a id="account-button-mobile"><img class="icon" src="../assets/account.png"></div></a></a>
+                <a href=""><div class="icon-container"><a id="cart-button-mobile"><img class="icon" src="../assets/cart.png"></div></a></a>
+            </div>
         </div>        
         <div class="icons">
             <!-- Search -->
@@ -55,12 +61,59 @@
                 </div>
             </a>
         </div>
+        <div class="burger-menu burger" id="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </nav>
     <!-- Navigation Bar End -->
+
+     <!-- Sidebars Start -->
+     <div class="sidebar-cart" id="sidebar-cart">
+        <div class="sidebar-container">
+            <button class="close-sidebar" id="close-cart">&times;</button> 
+            <h3>SHOPPING CART</h3>
+            <hr class="divider">
+            <ul class="cart-items">
+                <!-- Will be filled using javascript -->
+            </ul>
+            <h3 class="cart-total"></h3> 
+            <!-- Will be set using javascript -->    
+        </div>
+    </div>
+
+    <div class="sidebar-account" id="sidebar-account">
+        <div class="sidebar-container">
+            <button class="close-sidebar" id="close-account">&times;</button> 
+            <h3>LOGIN</h3>
+            <hr class="divider">
+            <ul>
+                <li>
+                    <input type="email-account" id="email-account" name="email-account" placeholder="Email" required>
+                </li>
+                <li>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </li>
+                <li>
+                    <a href="#" id="forgot-password">Forgot your password?</a>
+                </li>
+                <li>
+                    <button type="submit" form="account-form" id="login">Login</button>
+                </li>
+                <li>
+                    <a href="#" id="create-account">New customer? Create a new account</a>
+                </li>
+            </ul>    
+        </div>
+    </div>
+    <!-- Sidebars End -->
+
     <!-- Search Results -->
     <div id="search-results" class="search-results" style="display:none;">
         <ul id="results-list"></ul>
     </div>
+
     <!-- Hero Start -->
     <div class="hero">
         <div class="carousel-hero">
@@ -76,6 +129,15 @@
         </div>
     </div>
     <!-- Hero End -->
+    <div class="sort-container">
+        <select id="sort-select">
+            <option value="">Sort By</option>
+            <option value="price">Price: High to Low</option>
+            <option value="price-low-to-high">Price: Low to High</option>
+            <option value="alphabetical">Alphabetical Order</option>
+            <option value="reverse-alphabetical">Reverse Alphabetical Order</option>
+        </select>
+    </div>
 
     <section class="products">
         <div class="product">
