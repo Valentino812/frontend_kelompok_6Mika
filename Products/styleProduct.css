@@ -19,6 +19,17 @@ body {
     height: 50px;
 }
 
+/* Filter Start */
+.blur {
+    filter: none;
+    transition: filter 0.3s ease; 
+}
+
+.blur.activeblur {
+    filter: blur(1px);
+}
+/* Filter End */
+
 /* Container Styles */
 .container {
     display: flex;
