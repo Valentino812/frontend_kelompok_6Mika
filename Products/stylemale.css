@@ -230,11 +230,12 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    background-color: #FEFFFF; 
-    padding: 10px 40px;
-    color:#393343;
+    align-items: center; /* Center items vertically */
+    background-color: #FFFFFF; /* Pure white background */
+    padding: 20px 40px; /* Increased padding for more space */
+    color: #333333; /* Darker text color */
     position: relative; 
+    z-index: 1100;
 }
 
 #navbar-logo {
@@ -245,7 +246,7 @@ footer {
 .navbar-menu {
     display: flex;
     align-items: center;
-    padding-left: 50px;
+    padding-left: 143px;
     gap: 20px;
 }
 
@@ -263,44 +264,211 @@ footer {
 
 .navbar-menu li h3 {
     font-size: 22px;
-    transition: color 0.3s ease;
-    color:#393343;
-    font-weight:500;
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: #393343;
+    font-weight: 500;
     text-decoration: none; 
 }
 
 .navbar li h3:hover {
-    color:#F3B552;
+    color: #FF9900; /* Brighter hover color */
 }
 
 .icons {
     display: flex;
-    flex-direction: row;
+    align-items: center; /* Center icons vertically */
     gap: 12px;
 }
 
+.mobile-icons {
+    display: none; /* Hiding mobile icons */
+}
+
 .icon-container {
-    background-color: #FEFFFF; 
+    background-color: #FFFFFF; /* Pure white background */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 34px;
     height: 34px;
     border-radius: 50%; 
-    transition: background-color 1s ease, transform 1s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .icon-container:hover {
-    background-color:  #F3B552;
-    transform: scale(1.1);  
+    background-color: #FF9900; /* Brighter hover color */
 }
 
 .icon {
     width: 20px;
     height: 20px;
 }
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.burger-menu .line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+}
+
+.close-button { 
+    display: none;
+}
 /* Navbar End */
+
+/* 4.Sidebars Start */
+.sidebar-cart,
+.sidebar-account {
+    width: 300px;
+    height: 100%;
+    background: #F3B552;
+    position: fixed;
+    top: 0;
+    justify-content: flex-end;
+    right: -300px;
+    overflow: hidden;
+    z-index: 1300;
+    transition: right 0.3s ease; 
+    justify-content: right;
+    box-shadow: -2px 0 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.sidebar-cart.active {
+    right: 0; 
+}
+
+.sidebar-container {
+    padding: 25px;
+}
+
+.close-sidebar {
+    padding-right: 200px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    align-items: left;
+    transition: color 0.3s ease;
+}
+
+.close-sidebar:hover {
+    color: #FF4500;
+    background:none;
+}
+
+.sidebar-container h3 {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: normal;
+    width: 100%;
+    line-height: 80px;
+    display: block;
+}
+
+.divider {
+    border: none; 
+    height: 1px; 
+    background-color: #333; 
+    margin: 20px 0; 
+}
+
+.sidebar-cart ul{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-cart ul li{
+    padding-left: 25px;
+    list-style: none;
+}
+
+.sidebar-account {
+    width: 300px;
+    height: 100%;
+    background: #F3B552;
+    position: fixed;
+    top: 0;
+    justify-content: flex-end;
+    right: -300px;
+    overflow: hidden;
+    transition: right 0.3s ease; 
+    justify-content: right;
+}
+
+.sidebar-account.active {
+    right: 0; 
+}
+
+.sidebar-account ul{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-account ul li{
+    padding-left: 25px;
+    list-style: none;
+    margin-bottom: 15px; 
+}
+
+.sidebar-account ul li input[type="email-account"],
+.sidebar-account ul li input[type="password"] {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+.sidebar-account ul li input[type="email-account"]:focus,
+.sidebar-account ul li input[type="password"]:focus {
+    border-color: grey; 
+    outline: none; 
+}
+
+#forgot-password, #create-account {
+    display: block;
+    color: #F0F0F0;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+}
+
+#forgot-password:hover, #create-account:hover {
+    text-decoration: underline;
+}
+
+.sidebar-account ul button  {
+    background-color: #FF9900;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px; 
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-account ul button:hover  {
+    background-color: #CC7A00; 
+}
+/* 4.Sidebars End */
 
 .product-image {
     position: relative;
@@ -503,13 +671,93 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .burger {
+   /* Navbar Start */
+   .navbar {
+        flex-direction: column; 
+        padding: 10px; 
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .navbar-logo {
+        order: 1; 
+        padding-top: 30px;
+        padding-left: 30px;
+        margin-bottom: -40px; 
+        margin-top: 28px;
+    }
+
+    .icons {
+        display: none; /* Hiding destkop icons */
+    }
+
+    .mobile-icons {
         display: flex;
+        gap: 12px;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .burger-menu {
+        order: 2; 
+        align-self: flex-end;
+        padding-right: 35px; 
+        margin-bottom: 20px;
     }
 
     .navbar-menu {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        flex-direction: column;
+        width: 100%;
+        background-color: #FFFFFF;
+        position: absolute;
+        padding: 20px 0;
+        order: 3; 
+        z-index: 1100;
+        border-radius: 8px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        transition: all 0.3s ease-in-out; 
+        max-height: 0; 
+        overflow: hidden; 
     }
+
+    .close-button {
+        display: none;
+        font-size: 30px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .navbar-menu.active .close-button {
+        display: block;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 20px; 
+    }
+
+    .navbar-menu li a {
+        padding: 10px 15px; 
+        border-radius: 4px;
+        transition: background-color 0.3s ease; 
+    }
+
+    .navbar-menu.active {
+        display: flex; 
+        max-height: 900px; 
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .burger-menu {
+        display: flex; 
+    }
+    /* Navbar End */
+    
 }
 
 /* Responsive Styles for Footer */

@@ -134,6 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sortProducts(event.target.value);
     });
 
+    // Navbar burger start
     const burger = document.querySelector('.burger');
     const navbarMenu = document.querySelector('.navbar-menu');
 
@@ -147,4 +148,5 @@ document.addEventListener('DOMContentLoaded', () => {
             navbarMenu.classList.remove('active');
         }
     });
+    // Navbar burger end
 });
