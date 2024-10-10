@@ -9,18 +9,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-/* 2.Entrance Animation and Filter Start */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px); 
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-/* Active state for fade-in after transition (used in the javascript) */
-.fade-in.active {
-    opacity: 1;
-    transform: translateY(0); 
-}
+/* Filter Start */
 
 .blur {
     filter: none;
@@ -30,6 +19,7 @@ html, body {
 .blur.activeblur {
     filter: blur(1px);
 }
+/* Filter End */
 
 /* 2.Entrance Animation and Filter End */
 
