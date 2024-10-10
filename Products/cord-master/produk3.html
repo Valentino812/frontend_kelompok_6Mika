@@ -6,7 +6,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="produk3.css" />
+    <link rel="stylesheet" href="../styleProduct.css" />
     <link rel="icon" href=
         "../../assets/brand-logo.png"
     type="image/png" />
@@ -28,13 +28,11 @@
                 <li><a href="Contact/index.html"><h3>Contact</h3></a></li>
             </ul>
             <div class="mobile-icons">
-                <a href=""><div class="icon-container"><img class="icon" src="../../assets/search.png"></div></a>
                 <a href=""><div class="icon-container"><a id="account-button-mobile"><img class="icon" src="../../assets/account.png"></div></a></a>
                 <a href=""><div class="icon-container"><a id="cart-button-mobile"><img class="icon" src="../../assets/cart.png"></div></a></a>
             </div>
         </div>        
         <div class="icons">
-            <a href=""><div class="icon-container"><a href="Products/IndexSearch.html"><img class="icon" src="../../assets/search.png"></div></a></a>
             <a href=""><div class="icon-container"><a id="account-button"><img class="icon" src="../../assets/account.png"></div></a> </a>
             <a href=""><div class="icon-container"><a id="cart-button"><img class="icon" src="../../assets/cart.png"></div></a> </a>
         </div>
@@ -46,16 +44,58 @@
     </nav>
     <!-- Navigation Bar End -->
 
+    <!-- Sidebars Start -->
+    <div class="sidebar-cart" id="sidebar-cart">
+      <div class="sidebar-container">
+          <button class="close-sidebar" id="close-cart">&times;</button> 
+          <h3>SHOPPING CART</h3>
+          <hr class="divider">
+          <ul class="cart-items">
+              <!-- Will be filled using javascript -->
+          </ul>
+          <h3 class="cart-total"></h3> 
+          <!-- Will be set using javascript -->    
+      </div>
+  </div>
+
+  <div class="sidebar-account" id="sidebar-account">
+      <div class="sidebar-container">
+          <button class="close-sidebar" id="close-account">&times;</button> 
+          <h3>LOGIN</h3>
+          <hr class="divider">
+          <ul>
+              <li>
+                  <input type="email-account" id="email-account" name="email-account" placeholder="Email" required>
+              </li>
+              <li>
+                  <input type="password" id="password" name="password" placeholder="Password" required>
+              </li>
+              <li>
+                  <a href="#" id="forgot-password">Forgot your password?</a>
+              </li>
+              <li>
+                  <button type="submit" form="account-form" id="login">Login</button>
+              </li>
+              <li>
+                  <a href="#" id="create-account">New customer? Create a new account</a>
+              </li>
+          </ul>    
+      </div>
+  </div>
+  <!-- Sidebars End -->
+
     <div class="container">
       <div class="left-column">
         <img
           alt="Bedrock Image 1"
+          id="image1"
           height="400"
           src="../../assets/product3.webp"
           width="600"
         />
         <img
           alt="Bedrock Image 2"
+          id="image2"
           height="400"
           src="../../assets/product3-hover.webp"
           width="600"
@@ -197,6 +237,6 @@
       </div>
   </footer>
     <!-- Footer End -->
-    <script src="produk3.js"></script>
+    <script src="../scriptProduct.js"></script>
   </body>
 </html>
