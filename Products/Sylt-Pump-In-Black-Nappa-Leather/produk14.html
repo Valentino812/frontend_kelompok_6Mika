@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- Navigation Bar Start-->
-    <nav class="navbar fade-in">
+    <nav class="navbar blur">
         <div class="navbar-logo">
             <a href="../../index.html">
                 <img src="../../assets/brand-logo.png" id="navbar-logo">    
@@ -44,16 +44,58 @@
     </nav>
     <!-- Navigation Bar End -->
 
-    <div class="container">
+        <!-- Sidebars Start -->
+        <div class="sidebar-cart" id="sidebar-cart">
+          <div class="sidebar-container">
+              <button class="close-sidebar" id="close-cart">&times;</button> 
+              <h3>SHOPPING CART</h3>
+              <hr class="divider">
+              <ul class="cart-items">
+                  <!-- Will be filled using javascript -->
+              </ul>
+              <h3 class="cart-total"></h3> 
+              <!-- Will be set using javascript -->    
+          </div>
+      </div>
+    
+      <div class="sidebar-account" id="sidebar-account">
+          <div class="sidebar-container">
+              <button class="close-sidebar" id="close-account">&times;</button> 
+              <h3>LOGIN</h3>
+              <hr class="divider">
+              <ul>
+                  <li>
+                      <input type="email-account" id="email-account" name="email-account" placeholder="Email" required>
+                  </li>
+                  <li>
+                      <input type="password" id="password" name="password" placeholder="Password" required>
+                  </li>
+                  <li>
+                      <a href="#" id="forgot-password">Forgot your password?</a>
+                  </li>
+                  <li>
+                      <button type="submit" form="account-form" id="login">Login</button>
+                  </li>
+                  <li>
+                      <a href="#" id="create-account">New customer? Create a new account</a>
+                  </li>
+              </ul>    
+          </div>
+      </div>
+      <!-- Sidebars End -->
+
+    <div class="container blur">
       <div class="left-column">
         <img
           alt="Sylt Pump In Black Nappa Leather Image 1"
+          id="image1"
           height="400"
           src="../../assets/ws2.webp"
           width="600"
         />
         <img
           alt="Sylt Pump In Black Nappa Leather Image 2"
+          id="image2"
           height="400"
           src="../../assets/ws2h.webp"
           width="600"
@@ -165,7 +207,7 @@
       </div>
     </div>
     <!-- Footer Start -->
-    <footer class="footer fade-in blur">
+    <footer class="footer blur">
       <div class="footer-content">
           <div class="logo">
               <img src="../../assets/brand-logo.png"/>
