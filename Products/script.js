@@ -1,4 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
+$(document).ready(function()  {
+
+    // Entrance Transition Start (using jQuery for simpler syntax)
+    // Trigger the active class to do the transition for fade-in
+    $('.fade-in').each(function(index) {
+        $(this).delay(150 * index).queue(function(next) { // 150ms delay between transitions of each element 
+            $(this).addClass('active');
+            next();
+        });
+    });
+    // Entrance Transition End
+
     let currentIndex = 0;
     let autoSlideHero;
 

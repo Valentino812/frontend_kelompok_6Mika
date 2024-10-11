@@ -1,6 +1,17 @@
 // JavaScript untuk interaksi jika diperlukan
 
-document.addEventListener('DOMContentLoaded', () => {
+$(document).ready(function()  {
+
+    // Entrance Transition Start (using jQuery for simpler syntax)
+    // Trigger the active class to do the transition for fade-in
+    $('.fade-in').each(function(index) {
+        $(this).delay(150 * index).queue(function(next) { // 150ms delay between transitions of each element 
+            $(this).addClass('active');
+            next();
+        });
+    });
+    // Entrance Transition End
+    
     const configSections = document.querySelectorAll('.config-section');
 
     configSections.forEach(section => {
@@ -156,45 +167,4 @@ document.addEventListener('DOMContentLoaded', () => {
      });
      // Sidebars End
 
-     // Cart Adding Start
-     let cartItems = [];
-let totalAmount = 0;
-
-// Function to add item to cart
-function addToCart(title, price, image) {
-  // Add item to cart array
-  cartItems.push({ title, price, image });
-  
-  // Update total
-  totalAmount += price;
-  
-  // Render cart items
-  renderCartItems();
-}
-
-// Function to render cart items
-function renderCartItems() {
-  const cartItemsList = document.querySelector('.cart-items');
-  const cartTotal = document.getElementById('cart-total');
-  
-  // Clear existing items
-  cartItemsList.innerHTML = '';
-  
-  // Add each item to the cart
-  cartItems.forEach(item => {
-    const cartItem = document.createElement('li');
-    cartItem.innerHTML = `
-      <img src="${item.image}" alt="${item.title}">
-      <div class="item-info">
-        <h4>${item.title}</h4>
-        <span>$${item.price.toFixed(2)}</span>
-      </div>
-    `;
-    cartItemsList.appendChild(cartItem);
-  });
-
-  // Update total price
-  cartTotal.textContent = totalAmount.toFixed(2);
-}
-// Cart Adding end
 });
