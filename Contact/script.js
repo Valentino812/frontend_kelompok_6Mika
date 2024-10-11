@@ -1,4 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
+$(document).ready(function() {
+    // Entrance Transition Start (using jQuery for simpler syntax)
+    // Trigger the active class to do the transition for fade-in
+    $('.fade-in').each(function(index) {
+        $(this).delay(150 * index).queue(function(next) { // 150ms delay between transitions of each element 
+            $(this).addClass('active');
+            next();
+        });
+    });
+    // Entrance Transition End
+
     const burgerMenu = document.getElementById('burger-menu');
     const navbarMenu = document.querySelector('.navbar-menu');
     const closeButton = document.getElementById('close-button');
@@ -41,42 +51,36 @@ document.addEventListener('DOMContentLoaded', () => {
     // Button to open sidebar cart (Destkop)
     cartButton.addEventListener('click', () => {
         sidebarCart.classList.toggle('active');
-        // blurEffect.classList.toggle('activeblur');
         toggleBlur();
     });
 
     // Button to open sidebar cart (Mobile) 
     cartButtonMobile.addEventListener('click', () => {
         sidebarCart.classList.toggle('active');
-        // blurEffect.classList.toggle('activeblur');
         toggleBlur();
     });
     
     // Button to open sidebar account (Destkop)
     accountButton.addEventListener('click', () => {
         sidebarAccount.classList.toggle('active')
-        // blurEffect.classList.toggle('activeblur');;
         toggleBlur();
     });
 
     // Button to open sidebar account (Mobile)
     accountButtonMobile.addEventListener('click', () => {
         sidebarAccount.classList.toggle('active');
-        // blurEffect.classList.toggle('activeblur');
         toggleBlur();
     });
 
     // Cart sidebar close button
     closeCartButton.addEventListener('click', () => {
         sidebarCart.classList.remove('active');
-        // blurEffect.classList.remove('activeblur');
         removeBlur();
     });
 
     // Account sidebar close button
     closeAccountButton.addEventListener('click', () => {
         sidebarAccount.classList.remove('active');
-        // blurEffect.classList.remove('activeblur');
         removeBlur();
     });
 });
